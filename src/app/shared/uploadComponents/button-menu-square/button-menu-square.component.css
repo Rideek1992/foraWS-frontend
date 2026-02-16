@@ -1,0 +1,70 @@
+/*
+Error: Invalid CSS after "lighten(c": expected ")", was ".$fontColorLigh..."
+        on line 6 of button-menu-square.component.sass
+
+1: @use 'styles' as c
+2: 
+3: .ButtonSquare
+4:   width: 100%
+5:   aspect-ratio: 1 / 1
+6:   background-color: lighten(c.$fontColorLight,10%)
+7:   display: flex
+8:   flex-direction: column
+9:   justify-content: center
+10:   align-items: center
+11:   position: relative
+
+Backtrace:
+button-menu-square.component.sass:6
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:862:in `assert_tok'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:644:in `funcall'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:531:in `css_min_max'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:507:in `ident'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_not'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_div'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_plus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `relational'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `and_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `or_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:481:in `space'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:422:in `interpolation'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:343:in `expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:853:in `assert_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:228:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script.rb:27:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:1169:in `parse_script'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:745:in `parse_property'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"lighten(c\": expected \")\", was \".$fontColorLigh...\"\A         on line 6 of button-menu-square.component.sass\A \A 1: @use 'styles' as c\A 2: \A 3: .ButtonSquare\A 4:   width: 100%\A 5:   aspect-ratio: 1 / 1\A 6:   background-color: lighten(c.$fontColorLight,10%)\A 7:   display: flex\A 8:   flex-direction: column\A 9:   justify-content: center\A 10:   align-items: center\A 11:   position: relative"; }

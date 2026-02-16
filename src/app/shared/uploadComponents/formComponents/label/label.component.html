@@ -1,0 +1,68 @@
+@if (elementForm === 'input') {
+  <label for="{{ textElement }}"
+    >{{ textElement }}
+    @if (requiredElement) {
+      <span class="reqiredElement">* </span>
+    }
+  </label>
+  <input
+    id="{{ textElement }}"
+    [type]="type"
+    [value]="value"
+    [disabled]="disable"
+    (input)="handleInput($event)"
+    (blur)="handleBlur()"
+  />
+} @else if (elementForm === 'select') {
+  <label for="{{ textElement }}"
+    >{{ textElement }}
+    @if (requiredElement) {
+      <span class="reqiredElement">* </span>
+    }
+  </label>
+  <select
+    name="{{ textElement }}"
+    id="{{ textElement }}"
+    [value]="value"
+    (change)="handleInput($event)"
+    (blur)="handleBlur()"
+  >
+    <option value=""></option>
+    @for (option of optionsForm; track option) {
+      <option [value]="textElement === 'Temat rozmowy' ? option.name : option">
+        {{ textElement === 'Temat rozmowy' ? option.name : option }}
+      </option>
+    }
+  </select>
+} @else if (elementForm === 'textarea') {
+  <label for="{{ textElement }}"
+    >{{ textElement }}
+    @if (requiredElement) {
+      <span class="reqiredElement">* </span>
+    }
+  </label>
+  <textarea
+    name="{{ textElement }}"
+    id="{{ textElement }}"
+    [value]="value"
+    (input)="handleInput($event)"
+    (blur)="handleBlur()"
+  ></textarea>
+} @else if (elementForm === 'checkbox') {
+  <div class="checkboxItem">
+    <input
+      id="{{ textElement }}"
+      [type]="type"
+      [checked]="value"
+      [disabled]="disable"
+      (input)="handleInput($event)"
+      (blur)="handleBlur()"
+    />
+    <div>
+      @if (requiredElement) {
+        <span class="reqiredElement">* </span>
+      }
+      <p>{{ textElement }}</p>
+    </div>
+  </div>
+}

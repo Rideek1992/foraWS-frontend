@@ -1,0 +1,70 @@
+/*
+Error: Invalid CSS after "lighten(c": expected ")", was ".$fontColorDark..."
+        on line 17 of svg-icons.component.sass
+
+12:   display: grid
+13:   grid-template-columns: repeat(var(--svgGridLength), 1fr)
+14:   grid-gap: $sizeMediumElement
+15: .iconElement
+16:   height: $sizeMediumElement
+17:   background-color: lighten(c.$fontColorDark, 15%)
+18:   mask-repeat: no-repeat
+19:   mask-position: center
+20: 
+21: p
+22:   text-align: center
+
+Backtrace:
+svg-icons.component.sass:17
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:862:in `assert_tok'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:644:in `funcall'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:531:in `css_min_max'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:507:in `ident'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_not'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_div'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:295:in `unary_plus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `plus_or_minus'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `relational'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `eq_or_neq'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `and_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:272:in `or_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:481:in `space'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:422:in `interpolation'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:343:in `expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:853:in `assert_expr'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:68:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:228:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script.rb:27:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:1169:in `parse_script'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:745:in `parse_property'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"lighten(c\": expected \")\", was \".$fontColorDark...\"\A         on line 17 of svg-icons.component.sass\A \A 12:   display: grid\A 13:   grid-template-columns: repeat(var(--svgGridLength), 1fr)\A 14:   grid-gap: $sizeMediumElement\A 15: .iconElement\A 16:   height: $sizeMediumElement\A 17:   background-color: lighten(c.$fontColorDark, 15%)\A 18:   mask-repeat: no-repeat\A 19:   mask-position: center\A 20: \A 21: p\A 22:   text-align: center"; }

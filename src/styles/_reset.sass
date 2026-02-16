@@ -1,0 +1,35 @@
+@use 'fonts' as f
+
+
+*
+  font-size: 10px
+*,
+*::before,
+*::after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+
+
+app-root
+  display: grid
+  min-height: 100vh
+  grid-template-columns: repeat(12, 1fr)
+  gap: 2.4rem
+  font-family: f.$fontMain
+
+
+
+app-main-element
+  grid-column: 5/ -1
+
+  @media (min-width: 1900px)
+    grid-column: 4/ -1
+    margin-left: 3rem
+
+body
+ min-height: 100vh
+
+
+

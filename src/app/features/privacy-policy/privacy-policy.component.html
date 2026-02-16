@@ -1,0 +1,8 @@
+<div class="privatePolicyComponent">
+  <div>
+    Wersia: {{ dataPrivatyPolicy.version }} z dnia:
+    {{ dataPrivatyPolicy.effectiveForm | date: 'dd.MM.yyyy' }}
+  </div>
+
+  <markdown [data]="dataPrivatyPolicy.content"></markdown>
+</div>

@@ -1,0 +1,46 @@
+<div class="footerContent">
+  <div class="menuServices">
+    <app-footer-link name="Projekty graficzne" link="graphics"></app-footer-link>
+    <app-footer-link name="Znakowanie magazynów" link="marking-warehouse"></app-footer-link>
+    <app-footer-link name="Poligrafia dla firm" link="print-companes"></app-footer-link>
+    <app-footer-link name="Usługi dronowe" link="drone-services"></app-footer-link>
+  </div>
+
+  <div class="menuInformation">
+    <app-footer-link name="Kontakt" link="contact"></app-footer-link>
+    <app-footer-link name="O nas" link="about-us"></app-footer-link>
+    <app-footer-link name="Portfolio" link="portfolio"></app-footer-link>
+    <app-footer-link name="Rekomendacje" link="recommendations" [active]="true"></app-footer-link>
+  </div>
+  <div class="contactData">
+    <div class="email">
+      <i class="fa-regular fa-envelope"></i>
+      <a href="mailto:{{ emailAddres }}">{{ emailAddres }}</a>
+    </div>
+    <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <a href="tel:{{ phoneNumber }}"
+        >{{ phoneNumber.slice(0, 3) }}-{{ phoneNumber.slice(3, 6) }}-{{
+          phoneNumber.slice(6, 9)
+        }}</a
+      >
+    </div>
+  </div>
+  <div class="companyData">
+    <p><i class="fa-solid fa-building"></i>FORA Damian Rabiński</p>
+    <p><i class="fa-solid fa-info"></i> <span>NIP:</span>5361941034</p>
+    <p>
+      <i class="fa-solid fa-map-location-dot"></i><span>Adres:</span>ul. Sikorskiego 5c, 05-119
+      Łajski
+    </p>
+  </div>
+  <div class="informationMenu">
+    <a href="privacy-policy">Polityka prywatności</a>
+  </div>
+  <div class="descriptionSection">
+    <p>
+      <i class="fa-regular fa-copyright"></i> {{ year > 2025 ? '2025 - ' + year : year }} FORA
+      Warehouse System <br />Wszelkie prawwa zastrzeżone
+    </p>
+  </div>
+</div>

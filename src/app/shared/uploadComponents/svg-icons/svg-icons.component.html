@@ -1,0 +1,12 @@
+<p>Wykorzystujemy sprawdzone technologie i narzędzia w coddziennej pracy</p>
+<div class="containerIconSection">
+  @for (icon of svgIcons; track icon.id) {
+    <div
+      class="iconElement"
+      [ngStyle]="{
+        'mask-image': 'url(' + urlAddres + icon.photo[0].url + ')',
+        '-webkit-mask-image': 'url(' + urlAddres + icon.photo[0].url + ')',
+      }"
+    ></div>
+  }
+</div>

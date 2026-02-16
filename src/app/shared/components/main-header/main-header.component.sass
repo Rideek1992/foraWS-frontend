@@ -1,0 +1,70 @@
+@use 'styles' as c
+
+$fontSizeText: 5rem
+
+
+:host
+  grid-column: 1 / span 4
+  position: fixed
+  top: 0
+  align-self: start
+  height: 100vh
+  width: 32.3%
+  max-width: 50rem
+
+main
+  height: 100%
+  background-color: c.$mainColor
+  box-shadow: 0 0 3rem 0.2rem c.$fontColorDark
+  display: grid
+  grid-template-rows:  auto auto 1fr
+  grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr
+  grid-gap: 2rem
+
+.mottoElement
+  grid-row: 2 / span 1
+  grid-column: 2 / span 3
+
+  p
+    color: c.$fontColorLight
+    font-size: $fontSizeText
+    font-family: c.$fontPrimary
+    font-weight: 300
+    text-transform: capitalize
+    letter-spacing: 0.1rem
+    & span
+      font-size: inherit
+      color: c.$fontColorDark
+      font-weight: 400
+
+  .mottoText
+    margin-top: $fontSizeText * 0.5
+    font-size: $fontSizeText * 0.4
+    letter-spacing: 0
+    font-weight: 200
+    color: c.$fontColorDark
+
+.logoElement
+  grid-row: 1 / span 1
+  grid-column: 2 / -2
+  height: 10vh
+  width: 100%
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-content: center
+  align-items: center
+
+  button
+    grid-column: 3 / span 1
+
+
+.logoFWS
+  grid-column: 1 / span 1
+  max-width: 20rem
+  height: 100%
+  background-color: #fafafa
+  mask: url('../../../../../public/iconst/LogoFWS.svg') no-repeat
+  -webkit-mask: url('../../../../../public/iconst/LogoFWS.svg') no-repeat
+  mask-size: contain
+  mask-position: left center
+

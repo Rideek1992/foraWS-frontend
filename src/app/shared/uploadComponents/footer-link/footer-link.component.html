@@ -1,0 +1,6 @@
+@if (active) {
+  @if (activeLinkt.slice(1) === link) {
+    <div class="activeLink"></div>
+  }
+  <a [class.active]="activeLinkt.slice(1) === link" routerLink="{{ link }}"> {{ name }}</a>
+}

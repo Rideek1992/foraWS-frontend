@@ -1,0 +1,91 @@
+@use 'styles' as c
+
+
+.privatePolicyComponent
+  display: grid
+  grid-template-columns: 0.5fr repeat(5, 1fr) 0.5fr
+  margin-bottom: 8rem
+
+  div
+    grid-column: 1 / -1
+    grid-row: 1
+    margin-bottom: 3rem
+    font-size: c.$fontSizeSmallText * 0.8
+    justify-self: end
+
+
+
+  markdown
+    grid-row: 2 / span 1
+    grid-column: 2 / -2
+    width: 100%
+    margin: 0 auto
+
+
+    & > *
+      color: c.$fontColorDark
+      font-weight: 200
+
+
+    h1
+      font-size: c.$fontSizeSmallText * 1.2
+      font-weight: 600
+      margin: 2rem 0
+      justify-self: center
+
+    h2
+      font-size: c.$fontSizeSmallText * 1.2
+      font-weight: 400
+      margin: 2rem 0
+      justify-self: center
+
+    h3
+      font-size: c.$fontSizeSmallText
+      font-weight: 200
+      margin: 2rem 0
+
+    p
+      font-size: c.$fontSizeSmallText
+      font-weight: 200
+      margin: 1rem 0
+
+      strong
+        font-size: inherit
+        font-weight: 400
+
+
+
+
+    ol, ul
+      display: grid
+      grid-gap: 0.5rem
+
+      li
+        font-size: c.$fontSizeSmallText
+        p
+          font-size: inherit
+          margin: 1rem
+
+
+          strong
+            font-size: inherit
+
+
+    ol
+      li
+        list-style: decimal
+
+
+    ul
+
+      li
+        list-style: circle
+        margin-left: 2rem
+
+        strong
+          font-size: inherit
+          font-weight: inherit
+
+      li::marker
+        font-size: c.$fontSizeSmallText *0.8
+        color: c.$mainColor

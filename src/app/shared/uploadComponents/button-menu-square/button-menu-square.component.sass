@@ -1,0 +1,42 @@
+@use 'styles' as c
+
+.ButtonSquare
+  width: 100%
+  aspect-ratio: 1 / 1
+  background-color: lighten(c.$fontColorLight,10%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  color: c.$fontColorDark
+  border-radius: 1rem
+  cursor: pointer
+
+  &:hover
+    transform: scale(1.05)
+    transition: all 0.2s ease-in-out
+    box-shadow: 0 0 1rem 0.8rem rgba(c.$fontColorDark, 30%)
+  &:active
+    transform: scale(0.95)
+
+  i
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%)
+    font-size: 3rem
+
+
+
+  p
+    position: absolute
+    bottom: 0.5rem
+    left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    font-size: 1.2rem
+
+
+
+

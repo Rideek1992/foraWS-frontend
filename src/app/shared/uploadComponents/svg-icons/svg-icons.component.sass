@@ -1,0 +1,30 @@
+@use 'styles' as c
+
+$sizeMediumElement: 8rem
+
+:host
+  display: grid
+  margin: $sizeMediumElement auto
+  grid-gap: $sizeMediumElement * 0.1
+  width: 80%
+
+.containerIconSection
+  display: grid
+  grid-template-columns: repeat(var(--svgGridLength), 1fr)
+  grid-gap: $sizeMediumElement
+.iconElement
+  height: $sizeMediumElement
+  background-color: lighten(c.$fontColorDark, 15%)
+  mask-repeat: no-repeat
+  mask-position: center
+
+p
+  text-align: center
+  font-family: c.$fontMain
+  font-size: c.$fontSizeMediumText * 0.8
+  font-weight: 200
+  letter-spacing: 0.2rem
+  color: c.$fontColorDark
+
+
+

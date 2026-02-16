@@ -1,0 +1,39 @@
+@use 'styles' as c
+
+
+:host
+  display: grid
+  width: 100%
+  grid-template-columns: 0.8rem 1fr
+  grid-gap: 1rem
+
+
+
+a
+  font-size: c.$fontSizeSmallText
+  text-decoration: none
+  color: c.$fontColorDark
+  transition: all 0.2s ease-in-out
+  grid-column: 2 / span 1
+
+
+  &:hover
+    font-weight:  500
+    //color: darken(c.$mainColor, 5%)
+
+
+.activeLink
+  width: 0.8rem
+  height: 0.8rem
+  aspect-ratio: 1 / 1
+  background-color: c.$mainColor
+  margin-right: 1rem
+  flex-shrink: 0
+  border-radius: 50%
+  align-self: center
+
+
+
+.active
+  font-weight:  500
+  //color: darken(c.$mainColor, 5%)

@@ -1,0 +1,53 @@
+/*
+Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$mainColor"
+        on line 17 of main-header.component.sass
+
+12:   width: 32.3%
+13:   max-width: 50rem
+14: 
+15: main
+16:   height: 100%
+17:   background-color: c.$mainColor
+18:   box-shadow: 0 0 3rem 0.2rem c.$fontColorDark
+19:   display: grid
+20:   grid-template-rows:  auto auto 1fr
+21:   grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr
+22:   grid-gap: 2rem
+
+Backtrace:
+main-header.component.sass:17
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:69:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:228:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script.rb:27:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:1169:in `parse_script'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:745:in `parse_property'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$mainColor\"\A         on line 17 of main-header.component.sass\A \A 12:   width: 32.3%\A 13:   max-width: 50rem\A 14: \A 15: main\A 16:   height: 100%\A 17:   background-color: c.$mainColor\A 18:   box-shadow: 0 0 3rem 0.2rem c.$fontColorDark\A 19:   display: grid\A 20:   grid-template-rows:  auto auto 1fr\A 21:   grid-template-columns: 0.3fr repeat(3, 1fr) 0.3fr\A 22:   grid-gap: 2rem"; }

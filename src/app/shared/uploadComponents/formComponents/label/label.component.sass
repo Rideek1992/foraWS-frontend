@@ -1,0 +1,71 @@
+@use 'styles' as c
+
+:host
+  display: block
+  width: 100%
+  position: relative
+
+
+label
+  position: absolute
+  top: -0.5rem
+  background-color: #fff
+  padding: 0 1rem
+  left: 1rem
+
+
+input, select, textarea
+  width: 100%
+  box-sizing: border-box
+  display: block
+  font-size: c.$fontSizeMediumText * 0.8
+  padding: 1rem
+  border-radius: 0.5rem
+  border: solid 1px rgba(c.$fontColorDark, 0.3)
+  transition: all 0.2s ease-in-out
+
+
+  &:active, &:focus
+    outline: none
+    border-color: c.$mainColor
+
+textarea
+  //min-height: 10rem
+  resize: vertical
+  height: 100%
+  grid-column: 1 / -1
+
+
+.checkboxItem
+  margin-left: 5rem
+  display: flex
+  flex-direction: row
+  gap: 2rem
+
+
+
+  input
+    width: 1.5rem
+    accent-color: c.$mainColor
+
+
+
+  p
+    font-size: c.$fontSizeSmallText * 0.7
+
+    & > *
+
+      font-size: inherit
+
+
+
+.checkboxItem
+
+  div
+    display: flex
+    flex-direction: row
+    gap: 1rem
+
+  .checkboxText
+
+

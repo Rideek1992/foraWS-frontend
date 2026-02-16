@@ -1,0 +1,47 @@
+@use 'styles' as c
+
+
+:host
+  grid-column: 1 / -1
+  margin-bottom: c.$fontSizeBigText * 2.2
+
+.mainSlider
+  display: grid
+  grid-template-rows: auto auto
+  grid-gap: c.$fontSizeBigText * 0.9
+
+
+.sliderSection
+  height: 50vh
+  margin-top: c.$fontSizeBigText
+  border-radius: c.$fontSizeBigText
+  background-size: 100%
+  background-repeat: no-repeat
+  background-position: center center
+  position: relative
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    inset: 0
+    background-color: rgba(c.$mainColor, 0.3)
+
+  & > *
+    position: relative
+    z-index: 2
+
+
+p
+    width: 50%
+    //background-color: red
+    text-align: center
+    display: inline-block
+    font-family: c.$fontMain
+    font-size: c.$fontSizeMediumText * 0.9
+    letter-spacing: 0.4rem
+    font-weight: 100
+    align-content: center
+    justify-self: center
+    line-height: c.$fontSizeMediumText * 1.8
+
+

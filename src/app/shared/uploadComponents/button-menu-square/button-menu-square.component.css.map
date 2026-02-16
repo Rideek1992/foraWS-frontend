@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAEA,iBAAiB;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI",
+"sources": ["button-menu-square.component.sass"],
+"names": [],
+"file": "button-menu-square.component.css"
+}

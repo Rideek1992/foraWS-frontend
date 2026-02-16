@@ -1,0 +1,30 @@
+@use './fonts' as f
+@use './colors' as c
+
+$sizeButtonSmall: 1.5rem
+
+
+//font size
+$fontSizeSmallText: 1.6rem
+$fontSizeMediumText: $fontSizeSmallText * 1.2
+$fontSizeBigText: $fontSizeSmallText * 1.6
+.buttonElementSmall
+  padding: $sizeButtonSmall * 0.7
+  font-size: $sizeButtonSmall
+  font-family: f.$fontMain
+  border-radius: $sizeButtonSmall * 0.8
+  text-transform: lowercase
+  letter-spacing: $sizeButtonSmall * 0.05
+  border: none
+  align-self: center
+  justify-self: start
+  cursor: pointer
+
+
+.fontSmall
+  font-size: $fontSizeSmallText
+  color: c.$fontColorDark
+
+
+  &:first-letter
+    text-transform: uppercase

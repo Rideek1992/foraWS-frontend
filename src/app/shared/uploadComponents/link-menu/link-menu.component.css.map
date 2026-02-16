@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAEA,CAAC;EACC,KAAK,EAAE,OAAO",
+"sources": ["link-menu.component.sass"],
+"names": [],
+"file": "link-menu.component.css"
+}

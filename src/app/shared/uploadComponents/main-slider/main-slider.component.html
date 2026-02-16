@@ -1,0 +1,12 @@
+<div class="mainSlider">
+  @for (element of activeElementSlider; track element) {
+    @if (activeSlide === $index) {
+      <div
+        class="sliderSection"
+        style="background-image: url('{{ env }}{{ element.photo[0].url }}');"
+      ></div>
+      <p>{{ element.motto }}</p>
+    }
+  }
+  <app-svg-icons></app-svg-icons>
+</div>

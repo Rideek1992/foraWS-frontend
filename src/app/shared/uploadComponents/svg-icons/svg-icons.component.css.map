@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAGA,YAAY;EACV,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,iBAAiB,EAAE,SAAS",
+"sources": ["svg-icons.component.sass"],
+"names": [],
+"file": "svg-icons.component.css"
+}

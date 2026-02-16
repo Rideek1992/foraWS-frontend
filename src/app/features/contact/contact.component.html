@@ -1,0 +1,158 @@
+<h4>Napisz do nas a my sie do ciebie odezwiemy</h4>
+
+<!-- informacja o wysłanym formularzu -->
+@if (sendForm) {
+  <div class="infoSendMessageComponent">
+    <h3>{{ namePersonMessage }}, miło nam za wybór naszej firmy!</h3>
+    <p>
+      Dziękujemy za przesłanie zgłoszenia — zostało ono pomyślnie przyjęte i jest w trakcie
+      realizacji. .
+    </p>
+    <p>
+      Skontaktujemy się z Tobą zgodnie z wybraną metodą kontaktu
+      <span>({{ contactPersonMessage }})</span>, tak szybko, jak to możliwe.
+    </p>
+    <p>
+      Jeśli w międzyczasie pojawią się pytania lub będziesz chciał/a uzyskać informacje dotyczące
+      statusu zgłoszenia, zachowaj numer zgłoszenia i skontaktuj się z nami telefonicznie lub
+      mailowo, podając go w wiadomości.
+    </p>
+    <h4>Numer Twojego zgłoszenia</h4>
+    <p class="uniCode">{{ uniCodeElement }}</p>
+    <button (click)="closeForm()">Zamknij</button>
+  </div>
+}
+
+<!-- formularz kontaktowy do wysyłki połączony z bazą danych -->
+<form [formGroup]="contactForm" (ngSubmit)="submit()">
+  <div class="ContactInfo">
+    <p>Informacje podstawowe</p>
+    <app-label
+      elementForm="input"
+      textElement="Imię"
+      type="text"
+      placeholder="Imię"
+      formControlName="firstName"
+      [requiredElement]="true"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Nazwisko"
+      type="text"
+      placeholder="Nazwisko"
+      formControlName="lastName"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Email"
+      type="email"
+      placeholder="Email"
+      formControlName="emailAddress"
+      [requiredElement]="true"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Telefon"
+      type="text"
+      placeholder="telefon"
+      formControlName="phoneNumber"
+    ></app-label>
+    <app-label
+      elementForm="select"
+      textElement="Preferowany kontakt"
+      [optionsForm]="optionContact"
+      formControlName="preferredContact"
+    >
+    </app-label>
+    <app-label
+      elementForm="input"
+      textElement="Stanowisko"
+      type="text"
+      placeholder="stanowisko"
+      formControlName="position"
+    ></app-label>
+  </div>
+  <div class="CompanyName">
+    <p>Informacje o firmie</p>
+    <app-label
+      elementForm="input"
+      textElement="Nazwa firmy"
+      type="text"
+      placeholder="nazwa firmy"
+      formControlName="nameCompany"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Kraj"
+      type="text"
+      placeholder="Kraj"
+      formControlName="country"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Wjewództwo"
+      type="text"
+      placeholder="Województwo"
+      formControlName="region"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Miasto"
+      type="text"
+      placeholder="Miasto"
+      formControlName="city"
+    ></app-label>
+    <app-label
+      elementForm="input"
+      textElement="Kod pocztowy"
+      type="text"
+      placeholder="Kod pocztowy"
+      formControlName="postCode"
+    ></app-label>
+  </div>
+  <div class="RequestInfo">
+    <p>Wiadomość</p>
+    <div class="messageElement">
+      <app-label
+        elementForm="textarea"
+        textElement="Wiadomość"
+        type="text"
+        placeholder="Wiadomość"
+        formControlName="message"
+        [requiredElement]="true"
+      ></app-label>
+    </div>
+    <div class="infoMessageElement">
+      <app-label
+        elementForm="select"
+        textElement="Temat rozmowy"
+        [optionsForm]="optionsCompanyTopic"
+        formControlName="conversationElement"
+        [requiredElement]="true"
+      ></app-label>
+      <app-label
+        elementForm="select"
+        textElement="Wielkość firmy"
+        [optionsForm]="optionsCompanySize"
+        formControlName="companySize"
+      ></app-label>
+      <app-label
+        elementForm="select"
+        textElement="Rodzaj Firmy"
+        [optionsForm]="optionsCompanyIndustry"
+        formControlName="industry"
+      ></app-label>
+    </div>
+  </div>
+  <div class="ConsentElement">
+    <p>Zgody</p>
+    <app-label
+      type="checkbox"
+      elementForm="checkbox"
+      [requiredElement]="true"
+      textElement="Wyrażam zgodę na przetwarzanie moich danych osobowych przez FORA Damian Rabiński zgodnie z Polityką prywatności, w celu udzielenia odpowiedzi na zapytanie przesłane za pośrednictwem formularza kontaktowego."
+      formControlName="consent_contact_given"
+    ></app-label>
+  </div>
+  <button type="submit" [disabled]="contactForm.invalid">Wyślij</button>
+</form>

@@ -1,0 +1,17 @@
+@use 'styles' as c
+
+a
+  display: inline-block
+  color: c.$fontColorDark
+  font-size: c.$fontSizeSmallText * 0.9
+  text-decoration: none
+  margin-right: c.$fontSizeSmallText * 1.2
+  transition: all 0.2s ease-in-out
+  padding: 0.2rem
+
+  &:hover
+    transform: scale(1.2)
+    font-weight: 400
+    background-color: rgba(c.$fontColorDark, 5%)
+    box-shadow: 0 0 1rem 1rem  rgba(c.$fontColorDark, 5%)
+    border-radius: 0.5rem
