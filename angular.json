@@ -32,15 +32,16 @@
               }
             ],
             "styles": [
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/styles.sass"
+                           "src/styles.sass"
+
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "src"
               ]
             },
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

@@ -9,6 +9,8 @@ import { PortfolioComponent } from './features/portfolio/portfolio.component';
 import { RecommendationsComponent } from './features/recommendations/recommendations.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { PrivacyPolicyComponent } from './features/privacy-policy/privacy-policy.component';
+import { DataAnalysisComponent } from './features/data-analysis/data-analysis.component';
+import { WebsiteCreationComponent } from './features/website-creation/website-creation.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,5 +23,7 @@ export const routes: Routes = [
   { path: 'drone-services', component: DroneServicesComponent },
   { path: 'print-companes', component: PrintCompaniesComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'data-analytics', component: DataAnalysisComponent },
+  { path: 'website-creation', component: WebsiteCreationComponent },
   { path: '**', redirectTo: '' },
 ];

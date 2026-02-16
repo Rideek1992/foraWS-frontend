@@ -3,11 +3,12 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { LabelComponent } from '../../shared/uploadComponents/formComponents/label/label.component';
 import { CommonModule } from '@angular/common';
 import { ApibackandService } from '../../core/apibackand.service';
+import { ContactContentComponent } from '../../shared/components/contact-content/contact-content.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, LabelComponent, CommonModule],
+  imports: [ReactiveFormsModule, LabelComponent, CommonModule, ContactContentComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.sass',
 })
@@ -140,7 +141,7 @@ export class ContactComponent {
 
             this.api.informationBackendMail(entryID).subscribe({
               next: () => {
-                console.log(`Node powiadomoiny ${entryID}`);
+                console.log('formualrz wysłany');
               },
               error: (err) => console.log(err),
             });
