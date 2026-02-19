@@ -1,0 +1,20 @@
+
+  @if ( stage % 2 !== 0) {
+    <div class="stageBox iconLeft colorStageBox__{{stage}}">
+      <i class="{{iconRoadMap}}"></i>
+    </div>
+    <div class="contentBox contenLeft">
+      <h5>{{nameRoadMap}}</h5>
+      <p> {{descriptionRoadMap}}</p>
+    </div>
+  }@else{
+    <div class="stageBox iconRight colorStageBox__{{stage}}">
+      <i class="{{iconRoadMap}}"></i>
+    </div>
+    <div class="contentBox contentRight">
+      <h5>{{nameRoadMap}}</h5>
+      <p> {{descriptionRoadMap}}</p>
+    </div>
+  }
+
+

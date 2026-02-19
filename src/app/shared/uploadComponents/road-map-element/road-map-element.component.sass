@@ -1,0 +1,82 @@
+@use 'styles' as c
+
+
+:host
+  width: 100%
+  height: 100%
+  //background-color: red
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-items: center
+  align-items: center
+
+
+.stageBox
+  position: relative
+  width: 10rem
+  height: 10rem
+  //background-color: pink
+  border-radius: 50%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  &::after
+    content: ""
+    position: absolute
+    inset: -1.5rem
+    border-radius: 50%
+    border: 3px dashed c.$fontColorDark
+    pointer-events: none
+
+  i
+    font-size: 5rem
+
+.iconLeft
+  grid-row: 1 / span 1
+  grid-column: 1 / span 1
+
+.iconRight
+  grid-row: 1 / span 1
+  grid-column: 3 / span 1
+
+
+.contentBox
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: start
+  gap: 2rem
+  //background-color: red
+
+  h5
+    font-size: c.$fontSizeMediumText * 1.2
+
+  p
+    font-size: c.$fontSizeSmallText * 1.2
+
+.contentRight
+  grid-row: 1 / span 1
+  grid-column: 1 / span 2
+
+.contenLeft
+  grid-row: 1 / span 1
+  grid-column: 2 / span 2
+
+
+.colorStageBox__1
+  background-color: #A5B4FC
+.colorStageBox__2
+  background-color: #93C5FD
+.colorStageBox__3
+  background-color: #86EFAC
+.colorStageBox__4
+  background-color: #FCD34D
+.colorStageBox__5
+  background-color: #C4B5FD
+
+
+

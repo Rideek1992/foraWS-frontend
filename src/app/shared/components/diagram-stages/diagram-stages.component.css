@@ -1,0 +1,8 @@
+@use 'styles' as c;
+.container {
+  position: relative; }
+
+.asfalt {
+  stroke: #575757; }
+
+/*# sourceMappingURL=diagram-stages.component.css.map */

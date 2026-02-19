@@ -1,3 +1,39 @@
-div
-  i
+@use 'styles' as c
+
+:host
+  width: 80%
+  height: 100%
+  margin: 0 auto
+  display: grid
+  font-family: c.$fontPrimary
+  font-weight: 200
+  grid-gap: 4rem
+
+  *
+    font-family: inherit
+    font-weight: inherit
+    font-size: c.$fontSizeSmallText
+    letter-spacing: 0.2rem
+
+
+  h3
+    font-size: c.$fontSizeBigText
+    font-weight: 400
+    text-align: center
+
+
+.stagesCooperationElemenent
+  display: grid
+  grid-gap: 2rem
+
+  p
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+
+
+
+
 

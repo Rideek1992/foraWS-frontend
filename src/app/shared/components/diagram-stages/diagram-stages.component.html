@@ -1,0 +1,52 @@
+<div class="container">
+  <svg class="processPath" viewBox="0 0 1100 1200" width="100%" height="auto">
+
+    <!-- asfalt -->
+    <path class="asfalt"
+      d="M650,100H250c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h500c55.228,0,100,44.771,100,100h0c0,55.229-44.771,100-100,100h-250c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h250c55.228,0,100,44.771,100,100h0c0,55.229-44.771,100-100,100h-403.448c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h348.276"
+      fill="none"
+      stroke="#2d2d2d"
+      stroke-width="40"
+      stroke-linecap="round"
+    />
+
+    <!-- linia przerywana -->
+    <path class="lineBreak"
+      d="M650,100H250c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h500c55.228,0,100,44.771,100,100h0c0,55.229-44.771,100-100,100h-250c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h250c55.228,0,100,44.771,100,100h0c0,55.229-44.771,100-100,100h-403.448c-55.228,0-100,44.771-100,100h0c0,55.229,44.771,100,100,100h348.276"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="6"
+      stroke-dasharray="25 25"
+      stroke-linecap="round"
+    />
+    <foreignObject height="150" width="800" x="150" y="125">
+      <app-road-map-element [stage]="1" nameRoadMap="Kontakt i analiza potrzeb"
+                            descriptionRoadMap="Odbieramy Twoje zgłoszenie i analizujemy potrzeby. Ustalamy zakres projektu, cele oraz oczekiwany efekt końcowy."
+                            iconRoadMap="fa-light fa-message-check"></app-road-map-element>
+    </foreignObject>
+    <foreignObject height="150" width="800" x="50" y="325">
+      <app-road-map-element [stage]="2"
+                            nameRoadMap="Konsultacja i doprecyzowanie założeń"
+                            descriptionRoadMap="Doprecyzowujemy szczegóły techniczne i organizacyjne. Weryfikujemy możliwości realizacyjne oraz proponujemy optymalne rozwiązania."
+      iconRoadMap="fa-sharp fa-light fa-clipboard-list-check"></app-road-map-element>
+    </foreignObject>
+    <foreignObject height="150" width="700" x="400" y="525">
+      <app-road-map-element [stage]="3" nameRoadMap="Strategia i plan działania"
+                            descriptionRoadMap="Tworzymy plan realizacji – harmonogram, budżet i etapy wdrożenia. Określamy mierzalne cele i kamienie milowe projektu."
+                            iconRoadMap="fa-sharp fa-light fa-diagram-project"
+      ></app-road-map-element>
+    </foreignObject>
+    <foreignObject height="150" width="800" x="50" y="725">
+      <app-road-map-element [stage]="4" nameRoadMap=" Projekt i realizacja"
+                            descriptionRoadMap="Przechodzimy do działania. Tworzymy projekty, przygotowujemy materiały i wdrażamy ustalone rozwiązania zgodnie z planem."
+                            iconRoadMap="fa-sharp fa-light fa-gear"
+      ></app-road-map-element>
+    </foreignObject>
+    <foreignObject height="150" width="800" x="250" y="925">
+      <app-road-map-element [stage]="5" nameRoadMap="Wdrożenie i wsparcie"
+                            descriptionRoadMap="Finalizujemy realizację i przekazujemy gotowy efekt. Zapewniamy wsparcie powdrożeniowe oraz możliwość dalszej współpracy."
+                            iconRoadMap="fa-sharp fa-light fa-rocket-launch"
+      ></app-road-map-element>
+    </foreignObject>
+  </svg>
+</div>

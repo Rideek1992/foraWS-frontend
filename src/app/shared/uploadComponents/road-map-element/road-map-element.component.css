@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontPrimary"
-        on line 8 of contact-content.component.sass
+Error: Invalid CSS after "3px dashed c": expected expression (e.g. 1px, bold), was ".$fontColorDark"
+        on line 30 of road-map-element.component.sass
 
-3: :host
-4:   width: 80%
-5:   height: 100%
-6:   margin: 0 auto
-7:   display: grid
-8:   font-family: c.$fontPrimary
-9:   font-weight: 200
-10:   grid-gap: 4rem
-11: 
-12:   *
-13:     font-family: inherit
+25:   &::after
+26:     content: ""
+27:     position: absolute
+28:     inset: -1.5rem
+29:     border-radius: 50%
+30:     border: 3px dashed c.$fontColorDark
+31:     pointer-events: none
+32: 
+33:   i
+34:     font-size: 5rem
+35: 
 
 Backtrace:
-contact-content.component.sass:8
+road-map-element.component.sass:30
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -27,6 +27,12 @@ contact-content.component.sass:8
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
@@ -50,4 +56,4 @@ contact-content.component.sass:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontPrimary\"\A         on line 8 of contact-content.component.sass\A \A 3: :host\A 4:   width: 80%\A 5:   height: 100%\A 6:   margin: 0 auto\A 7:   display: grid\A 8:   font-family: c.$fontPrimary\A 9:   font-weight: 200\A 10:   grid-gap: 4rem\A 11: \A 12:   *\A 13:     font-family: inherit"; }
+  content: "Error: Invalid CSS after \"3px dashed c\": expected expression (e.g. 1px, bold), was \".$fontColorDark\"\A         on line 30 of road-map-element.component.sass\A \A 25:   &::after\A 26:     content: \"\"\A 27:     position: absolute\A 28:     inset: -1.5rem\A 29:     border-radius: 50%\A 30:     border: 3px dashed c.$fontColorDark\A 31:     pointer-events: none\A 32: \A 33:   i\A 34:     font-size: 5rem\A 35: "; }
