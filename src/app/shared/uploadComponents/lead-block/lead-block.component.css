@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontPrimary"
-        on line 8 of contact-content.component.sass
+Error: Invalid CSS after "0 0 10px 4px c": expected expression (e.g. 1px, bold), was ".$fontColorLight"
+        on line 27 of lead-block.component.sass
 
-3: :host
-4:   width: 80%
-5:   height: 100%
-6:   margin: 0 auto
-7:   display: grid
-8:   font-family: c.$fontPrimary
-9:   font-weight: 200
-10:   grid-gap: 4rem
-11: 
-12:   *
-13:     font-size: c.$fontSizeSmallText
+22:   transition: all 0.2s ease-in-out
+23:   cursor: pointer
+24: 
+25:   &:hover
+26:     transform: scale(1.1)
+27:     box-shadow: 0 0 10px 4px c.$fontColorLight
+28:     z-index: 3
+29: 
+30: 
+31:   i
+32:     font-size: 5rem
 
 Backtrace:
-contact-content.component.sass:8
+lead-block.component.sass:27
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -27,6 +27,12 @@ contact-content.component.sass:8
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
@@ -50,4 +56,4 @@ contact-content.component.sass:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontPrimary\"\A         on line 8 of contact-content.component.sass\A \A 3: :host\A 4:   width: 80%\A 5:   height: 100%\A 6:   margin: 0 auto\A 7:   display: grid\A 8:   font-family: c.$fontPrimary\A 9:   font-weight: 200\A 10:   grid-gap: 4rem\A 11: \A 12:   *\A 13:     font-size: c.$fontSizeSmallText"; }
+  content: "Error: Invalid CSS after \"0 0 10px 4px c\": expected expression (e.g. 1px, bold), was \".$fontColorLight\"\A         on line 27 of lead-block.component.sass\A \A 22:   transition: all 0.2s ease-in-out\A 23:   cursor: pointer\A 24: \A 25:   &:hover\A 26:     transform: scale(1.1)\A 27:     box-shadow: 0 0 10px 4px c.$fontColorLight\A 28:     z-index: 3\A 29: \A 30: \A 31:   i\A 32:     font-size: 5rem"; }

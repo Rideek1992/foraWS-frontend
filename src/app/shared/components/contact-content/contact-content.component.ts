@@ -2,11 +2,12 @@ import {Component, OnInit} from '@angular/core';
 import { DiagramStagesComponent } from '../diagram-stages/diagram-stages.component';
 import { StageService } from '../../../core/stage.service';
 import {JsonPipe} from "@angular/common";
+import {LeadBlockComponent} from "../../uploadComponents/lead-block/lead-block.component";
 
 @Component({
   selector: 'app-contact-content',
   standalone: true,
-  imports: [DiagramStagesComponent, JsonPipe],
+  imports: [DiagramStagesComponent, JsonPipe, LeadBlockComponent],
   templateUrl: './contact-content.component.html',
   styleUrl: './contact-content.component.sass',
 })

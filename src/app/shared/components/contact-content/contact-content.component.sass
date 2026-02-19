@@ -10,8 +10,6 @@
   grid-gap: 4rem
 
   *
-    font-family: inherit
-    font-weight: inherit
     font-size: c.$fontSizeSmallText
     letter-spacing: 0.2rem
 
@@ -30,10 +28,49 @@
     display: flex
     flex-direction: column
     justify-content: center
+    //align-items: center
+
+
+
+
+.sectionLead, .enndingSectionElement
+  display: flex
+  flex-direction: column
+  justify-content: center
+  gap: 2rem
+
+
+.contactElement
+  display: flex
+  flex-direction: row
+  gap: 10rem
+  align-items: center
+  justify-content: center
+
+  a
+    text-decoration: none
+    color: c.$fontColorDark
+    display: flex
+    flex-direction: column
+    justify-content: center
     align-items: center
+    gap: 2rem
+    transition: all 0.2s ease-in-out
+
+    &:hover
+      transform: scale(1.1)
+
+    i
+      font-size: 3rem
 
 
+.contactForm
+  margin: 3rem 0 0 0
 
 
-
-
+.sectionLeadBlock
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-items: center
+  align-items: center
+  gap: 2rem

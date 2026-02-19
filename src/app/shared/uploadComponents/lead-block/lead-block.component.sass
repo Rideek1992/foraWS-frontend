@@ -1,0 +1,69 @@
+@use 'styles' as c
+
+
+$colorFirstLeadBox: #FFF3E3
+$colorSecondLeadBox: #EAF2FB
+$colorThirdLeadBox: #EAF6EE
+
+
+
+
+.contenerLeadBlock
+  width: 100%
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr 1fr 2fr
+  grid-gap: 2rem
+  background-color: $colorFirstLeadBox
+  border-radius: 2rem
+  overflow: hidden
+  margin: 4rem 0
+  z-index: 1
+  transition: all 0.2s ease-in-out
+  cursor: pointer
+
+  &:hover
+    transform: scale(1.1)
+    box-shadow: 0 0 10px 4px c.$fontColorLight
+    z-index: 3
+
+
+  i
+    font-size: 5rem
+    justify-self: center
+    align-self: center
+    background-color: c.$mainColor
+    display: block
+    width: 100%
+    padding: 1rem 2rem
+
+  h4
+    font-size: c.$fontSizeSmallText
+    padding: 0 2rem
+    justify-self: center
+    text-align: center
+    align-self: center
+
+
+  p
+    font-size: c.$fontSizeSmallText * 0.8
+    padding: 0 2rem
+    text-align: center
+
+.color_1
+  background-color: $colorFirstLeadBox
+  i
+    background-color: darken($colorFirstLeadBox, 30%)
+    color: darken($colorFirstLeadBox, 60%)
+
+.color_2
+  background-color: $colorSecondLeadBox
+  i
+    background-color: darken($colorSecondLeadBox, 30%)
+    color: darken($colorSecondLeadBox, 60%)
+
+.color_3
+  background-color: $colorThirdLeadBox
+  i
+    background-color: darken($colorThirdLeadBox, 30%)
+    color: darken($colorThirdLeadBox, 60%)
