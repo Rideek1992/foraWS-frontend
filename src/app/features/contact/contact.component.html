@@ -147,13 +147,19 @@
   </div>
   <div class="ConsentElement">
     <p>Zgody</p>
-    <app-label
-      type="checkbox"
-      elementForm="checkbox"
-      [requiredElement]="true"
-      textElement="Wyrażam zgodę na przetwarzanie moich danych osobowych przez FORA Damian Rabiński zgodnie z Polityką prywatności, w celu udzielenia odpowiedzi na zapytanie przesłane za pośrednictwem formularza kontaktowego."
-      formControlName="consent_contact_given"
-    ></app-label>
+    <div class="textFomr">
+      <app-label
+        type="checkbox"
+        elementForm="checkbox"
+        [requiredElement]="true"
+        formControlName="consent_contact_given"
+      ></app-label>
+      <p>Wyrażam zgodę na przetwarzanie moich danych osobowych przez FORA Damian Rabiński
+        zgodnie z <a href="/privacy-policy">polityką prywatności</a>, w celu
+        udzielenia odpowiedzi na zapytanie
+        przesłane za pośrednictwem formularza kontaktowego.</p>
+    </div>
+
   </div>
   <button type="submit" [disabled]="contactForm.invalid">Wyślij</button>
 </form>
