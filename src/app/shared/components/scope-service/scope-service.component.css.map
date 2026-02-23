@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAEA,sBAAsB;EACpB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,OAAO;EAC9B,QAAQ,EAAE,IAAI;;AAGhB,kBAAkB;EAChB,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;EACjB,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK",
+"sources": ["scope-service.component.sass"],
+"names": [],
+"file": "scope-service.component.css"
+}

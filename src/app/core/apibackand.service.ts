@@ -32,6 +32,11 @@ export class ApibackandService {
     return this.http.get(enviroment.apiUrl + `/api/fora-ws-hero-section-modes?filters[page_name][$eq]=`+namePage+`&populate=*`);
   }
 
+  getGraphicElements():Observable<any>{
+    return this.http.get(enviroment.apiUrl  +
+      '/api/fora-ws-graphic-pages?populate=*');
+  }
+
   informationBackendMail(orderId: number) {
     return this.http.post(enviroment.backendMailerURL, { orderId });
   }

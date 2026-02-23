@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontMain"
-        on line 11 of graphics.component.sass
+Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontSizeMediu..."
+        on line 33 of scope-service.component.sass
 
-6: $colorThirdBox: #c5a1ec
-7: $colorFourthBox: #fbda9d
-8: 
-9: 
-10: :host
-11:   font-family: c.$fontMain
-12:   display: flex
-13:   flex-direction: column
-14:   gap: 10rem
-15:   justify-content: center
-16:   align-items: center
+28:   grid-template-columns: 1fr
+29:   grid-gap: 2rem
+30: 
+31: 
+32:   h4
+33:     font-size: c.$fontSizeMediumText
+34:     font-weight: 300
+35: 
+36:   p
+37:     font-size: c.$fontSizeSmallText
+38:     font-weight: 100
 
 Backtrace:
-graphics.component.sass:11
+scope-service.component.sass:33
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -27,6 +27,12 @@ graphics.component.sass:11
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
@@ -50,4 +56,4 @@ graphics.component.sass:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontMain\"\A         on line 11 of graphics.component.sass\A \A 6: $colorThirdBox: #c5a1ec\A 7: $colorFourthBox: #fbda9d\A 8: \A 9: \A 10: :host\A 11:   font-family: c.$fontMain\A 12:   display: flex\A 13:   flex-direction: column\A 14:   gap: 10rem\A 15:   justify-content: center\A 16:   align-items: center"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontSizeMediu...\"\A         on line 33 of scope-service.component.sass\A \A 28:   grid-template-columns: 1fr\A 29:   grid-gap: 2rem\A 30: \A 31: \A 32:   h4\A 33:     font-size: c.$fontSizeMediumText\A 34:     font-weight: 300\A 35: \A 36:   p\A 37:     font-size: c.$fontSizeSmallText\A 38:     font-weight: 100"; }

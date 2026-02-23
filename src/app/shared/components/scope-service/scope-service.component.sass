@@ -1,0 +1,61 @@
+@use 'styles' as c
+
+.containerScopeService
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 5rem
+
+
+  &.reverse
+    .photoScopeService
+      grid-column: 2 / -1
+      grid-row: 1 / span 1
+    .contentScopeService
+      grid-column: 1 / span 1
+      grid-row: 1 / span 1
+
+
+.photoScopeService
+  width: 100%
+  min-height: 10rem
+  background-position: center
+  background-size: cover
+  border-radius: 2rem
+
+
+.contentScopeService
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 2rem
+
+
+  h4
+    font-size: c.$fontSizeMediumText
+    font-weight: 300
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+
+
+
+:host::ng-deep markdown
+
+  ul,ol
+    list-style: none
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+    li
+      font-size: c.$fontSizeSmallText
+      font-weight: 100
+      position: relative
+
+      &::before
+        content: "\f336"
+        font-family: "Font Awesome 7 Pro"
+        font-weight: 100
+        font-size: c.$fontSizeSmallText * 0.9
+        margin-right: 1rem
+        color: inherit

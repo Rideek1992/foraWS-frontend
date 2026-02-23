@@ -1,0 +1,14 @@
+<div class="containerScopeService" [class.reverse]="isReverse">
+  <div class="photoScopeService"
+       [ngStyle]="{ 'background-image': 'url(' + adressURL + data.photo[0].url + ')' }"></div>
+  <div class="contentScopeService">
+    <h4>
+      {{data.scope_service}}
+    </h4>
+    <p>
+      {{data.description_scope}}
+    </p>
+    <markdown [data]="data.list_service"></markdown>
+    <p>{{data.efect_information}}</p>
+  </div>
+</div>

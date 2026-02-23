@@ -1,11 +1,12 @@
-<h2>Strategiczny design dla firm logistycznych, produkcyjnych i dystrybucyjnych</h2>
+<h2>{{dataHero.title}}</h2>
 <div class="photoElementHero" [ngStyle]="{backgroundImage: 'url(' + photosURS + ')'}"></div>
 <div class="contentElementHero">
-  <p>Projektujemy profesjonalne materiały wizualne wspierające sprzedaż, marketing oraz rozwój marek działających w sektorze B2B.</p>
-  <p>W ramach Fora Warehouse System tworzymy komunikację wizualną, która wzmacnia pozycję rynkową i podkreśla profesjonalizm organizacji.</p>
+  <markdown [data]="content"></markdown>
   <div class="buttonElementHero">
-    <app-button-link link="/contact" name="Skontaktuj się z nami" color="primary">
-    </app-button-link>
+    @if(dataHero.title){
+      <app-button-link link="/contact" name="Skontaktuj się z nami" color="primary">
+      </app-button-link>
+    }
   </div>
 </div>
 

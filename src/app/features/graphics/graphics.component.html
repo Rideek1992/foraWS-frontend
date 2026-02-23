@@ -1,2 +1,37 @@
 <app-hero></app-hero>
+<div class="designPhilosophyContener">
+  <h2>FILOZOFIA PROJEKTOWANIA</h2>
+  <div class="sectionDescriptionElement">
+    <h4>Design jako element strategii biznesowej</h4>
+    <p>W sektorze logistyki, produkcji i dystrybucji komunikacja wizualna nie jest dodatkiem.
+      Jest narzędziem budowania wiarygodności i przewagi konkurencyjnej.</p>
+  </div>
 
+  <div class="sectionProjectIcon">
+    <div class="iconElement">
+      <i class="fa-light fa-object-group color_1"></i>
+      <p>porządkują komunikację marki</p>
+    </div>
+    <div class="iconElement">
+      <i class="fa-light fa-shield-virus color_2"></i>
+      <p>wzmacniają wizerunek ekspercki</p>
+    </div>
+    <div class="iconElement">
+      <i class="fa-sharp fa-light fa-handshake color_3"></i>
+      <p>wspierają proces sprzedaży B2B</p>
+    </div>
+    <div class="iconElement">
+      <i class="fa-sharp fa-light fa-chart-diagram color_4"></i>
+      <p>budują spójność na każdym poziomie organizacji</p>
+    </div>
+  </div>
+  <p class="infoSection">Tworzymy estetykę opartą na przejrzystości, strukturze i
+    jakości — bez
+    nadmiaru formy nad treścią.</p>
+</div>
+<div class="scopeOfServiceElement">
+  <h4>Zakres usług</h4>
+  @for (data of dataElements; track data.id; let i = $index){
+    <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
+  }
+</div>

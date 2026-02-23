@@ -8,6 +8,7 @@ import {
 import { ApibackandService } from "../../../core/apibackand.service";
 import { enviroment} from "../../../../envirpments/enviroment";
 import {NgStyle} from "@angular/common";
+import {MarkdownComponent} from "ngx-markdown";
 
 
 @Component({
@@ -16,7 +17,8 @@ import {NgStyle} from "@angular/common";
   imports: [
     ButtonMenuSquareComponent,
     ButtonLinkComponent,
-    NgStyle
+    NgStyle,
+    MarkdownComponent
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.sass'
@@ -24,6 +26,7 @@ import {NgStyle} from "@angular/common";
 export class HeroComponent implements OnInit {
 
 
+  content: string = '';
 
 
   constructor (private api: ApibackandService)
@@ -38,7 +41,7 @@ export class HeroComponent implements OnInit {
       next: (res:any) => {
         this.dataHero = res.data[0]
         this.photosURS = `${this.urlAddress}${this.dataHero.photos[0].url}`
-        console.log(this.dataHero)
+        this.content = this.dataHero.description_text
       },
         error: (err:any) => {
         console.error('Błąd:', err);
