@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "3px dashed c": expected expression (e.g. 1px, bold), was ".$fontColorDark"
-        on line 30 of road-map-element.component.sass
+        on line 22 of road-map-element.component.sass
 
-25:   &::after
-26:     content: ""
-27:     position: absolute
-28:     inset: -1.5rem
-29:     border-radius: 50%
-30:     border: 3px dashed c.$fontColorDark
-31:     pointer-events: none
-32: 
-33:   i
-34:     font-size: 5rem
-35: 
+17:   border-radius: 50%
+18:   display: flex
+19:   flex-direction: column
+20:   justify-content: center
+21:   align-items: center
+22:   outline: 3px dashed c.$fontColorDark
+23:   outline-offset: 1.5rem
+24: 
+25: 
+26: 
+27:   i
 
 Backtrace:
-road-map-element.component.sass:30
+road-map-element.component.sass:22
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -27,12 +27,6 @@ road-map-element.component.sass:30
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
@@ -56,4 +50,4 @@ road-map-element.component.sass:30
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"3px dashed c\": expected expression (e.g. 1px, bold), was \".$fontColorDark\"\A         on line 30 of road-map-element.component.sass\A \A 25:   &::after\A 26:     content: \"\"\A 27:     position: absolute\A 28:     inset: -1.5rem\A 29:     border-radius: 50%\A 30:     border: 3px dashed c.$fontColorDark\A 31:     pointer-events: none\A 32: \A 33:   i\A 34:     font-size: 5rem\A 35: "; }
+  content: "Error: Invalid CSS after \"3px dashed c\": expected expression (e.g. 1px, bold), was \".$fontColorDark\"\A         on line 22 of road-map-element.component.sass\A \A 17:   border-radius: 50%\A 18:   display: flex\A 19:   flex-direction: column\A 20:   justify-content: center\A 21:   align-items: center\A 22:   outline: 3px dashed c.$fontColorDark\A 23:   outline-offset: 1.5rem\A 24: \A 25: \A 26: \A 27:   i"; }
