@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {HeroComponent} from "../../shared/components/hero/hero.component";
 
 @Component({
   selector: 'app-graphics',
   standalone: true,
-  imports: [],
+  imports: [
+    HeroComponent
+  ],
   templateUrl: './graphics.component.html',
   styleUrl: './graphics.component.sass'
 })

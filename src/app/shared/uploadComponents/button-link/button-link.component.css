@@ -1,15 +1,19 @@
 /*
-Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontMain"
-        on line 5 of graphics.component.sass
+Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$mainColor"
+        on line 4 of button-link.component.sass
 
 1: @use 'styles' as c
 2: 
-3: 
-4: :host
-5:   font-family: c.$fontMain
+3: .buttonLinkElement
+4:   background-color: c.$mainColor
+5:   display: flex
+6:   justify-content: center
+7:   align-items: center
+8:   border-radius: 2rem
+9:   transition: all 0.2s ease-in-out
 
 Backtrace:
-graphics.component.sass:5
+button-link.component.sass:4
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -44,4 +48,4 @@ graphics.component.sass:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontMain\"\A         on line 5 of graphics.component.sass\A \A 1: @use 'styles' as c\A 2: \A 3: \A 4: :host\A 5:   font-family: c.$fontMain"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$mainColor\"\A         on line 4 of button-link.component.sass\A \A 1: @use 'styles' as c\A 2: \A 3: .buttonLinkElement\A 4:   background-color: c.$mainColor\A 5:   display: flex\A 6:   justify-content: center\A 7:   align-items: center\A 8:   border-radius: 2rem\A 9:   transition: all 0.2s ease-in-out"; }

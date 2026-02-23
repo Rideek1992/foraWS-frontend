@@ -28,6 +28,10 @@ export class ApibackandService {
     );
   }
 
+  getHeroComponentData(namePage:any): Observable<any> {
+    return this.http.get(enviroment.apiUrl + `/api/fora-ws-hero-section-modes?filters[page_name][$eq]=`+namePage+`&populate=*`);
+  }
+
   informationBackendMail(orderId: number) {
     return this.http.post(enviroment.backendMailerURL, { orderId });
   }

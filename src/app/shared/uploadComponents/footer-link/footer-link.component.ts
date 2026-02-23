@@ -27,7 +27,6 @@ export class FooterLinkComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.activeLinkt = event.urlAfterRedirects;
-        console.log(this.activeLinkt);
       }
     });
   }
