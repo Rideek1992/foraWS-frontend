@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {HeroComponent} from "../../shared/components/hero/hero.component";
 
 @Component({
   selector: 'app-marking-warehouse',
   standalone: true,
-  imports: [],
+  imports: [
+    HeroComponent
+  ],
   templateUrl: './marking-warehouse.component.html',
   styleUrl: './marking-warehouse.component.sass'
 })

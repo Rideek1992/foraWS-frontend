@@ -1,10 +1,11 @@
 <h2>{{dataHero.title}}</h2>
 <div class="photoElementHero" [ngStyle]="{backgroundImage: 'url(' + photosURS + ')'}"></div>
 <div class="contentElementHero">
-  <markdown [data]="content"></markdown>
+  <markdown [data]="dataHero.description_text"></markdown>
   <div class="buttonElementHero">
     @if(dataHero.title){
-      <app-button-link link="/contact" name="Skontaktuj się z nami" color="primary">
+      <app-button-link link="/contact" name="{{dataHero.cta_text_button}}"
+                       color="primary">
       </app-button-link>
     }
   </div>

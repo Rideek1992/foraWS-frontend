@@ -7,7 +7,7 @@ import {
 } from "../../uploadComponents/button-link/button-link.component";
 import { ApibackandService } from "../../../core/apibackand.service";
 import { enviroment} from "../../../../envirpments/enviroment";
-import {NgStyle} from "@angular/common";
+import {JsonPipe, NgStyle} from "@angular/common";
 import {MarkdownComponent} from "ngx-markdown";
 
 
@@ -18,7 +18,8 @@ import {MarkdownComponent} from "ngx-markdown";
     ButtonMenuSquareComponent,
     ButtonLinkComponent,
     NgStyle,
-    MarkdownComponent
+    MarkdownComponent,
+    JsonPipe
   ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.sass'
