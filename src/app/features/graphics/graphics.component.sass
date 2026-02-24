@@ -11,9 +11,10 @@ $colorFourthBox: #fbda9d
   font-family: c.$fontMain
   display: flex
   flex-direction: column
-  gap: 10rem
+  gap: 6rem
   justify-content: center
   align-items: center
+  margin-bottom: 6rem
 
   & > *
     font-family: c.$fontMain
@@ -127,3 +128,144 @@ $colorFourthBox: #fbda9d
     font-size: c.$fontSizeBigText
     justify-self: center
     font-weight: 300
+
+
+.imageInformationSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 200
+    justify-self: center
+
+  p
+    width: 90%
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+    letter-spacing: 1px
+    text-align: start
+    justify-self: center
+
+
+.sectionImageIcon
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 3rem
+
+  h5
+    margin-top: 4rem
+    font-size: c.$fontSizeMediumText
+    font-weight: 200
+
+  ul
+    list-style: none
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    gap: 8rem 4rem
+    background-color: lighten(c.$fontColorLight, 13%)
+    padding: 4rem
+    border-radius: 2rem
+    outline: 1px solid rgba(c.$fontColorDark,30%)
+
+
+    li
+      color: darken(c.$fontColorLight,40%)
+      flex: 0 0 30%
+      font-size: c.$fontSizeSmallText
+      font-weight: 600
+      letter-spacing: 1px
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      align-self: start
+      gap: 1rem
+      transition: color 0.2s ease-in-out
+      cursor: default
+
+
+      &:hover
+        color: darken(c.$mainColor ,5%)
+
+      i
+        font-size: c.$fontSizeBigText * 1.4
+        opacity: 0.3
+
+
+
+
+.forWhomSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  h2
+    font-size: c.$fontSizeBigText
+    letter-spacing: 1px
+    font-weight: 200
+    text-align: center
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+    letter-spacing: 1px
+    width: 90%
+    margin: 0 auto
+
+  .sectionWithList
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-gap: 2rem
+
+    ul
+      list-style: none
+      display: flex
+      flex-direction: column
+      gap: 4rem
+      padding: 3rem 0
+      li
+        font-size: c.$fontSizeSmallText
+        font-weight: 100
+        display: flex
+        flex-direction: row
+        letter-spacing: 1px
+        gap: 2rem
+        justify-content: start
+        align-items: center
+        &::before
+          content: "\e4b2"
+          font-family: "Font Awesome 7 Pro"
+          color: c.$mainColor
+
+
+    .photoElement
+      background-image: url('https://admin.fora-poligrafia.pl/uploads/photo_company_1_98165532bd.webp')
+      background-size: cover
+      background-position: center
+      border-radius: 2rem
+
+
+.CTASection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 2rem
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 200
+    text-align: center
+
+  p
+    width: 90%
+    margin: 0 auto
+    font-size: c.$fontSizeSmallText
+    letter-spacing: 1px
+    font-weight: 100
+
+  app-button-link
+    justify-self: center
+

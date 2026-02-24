@@ -14,6 +14,25 @@ label
   left: 1rem
 
 
+.selectWrapper
+  position: relative
+  select
+    width: 100%
+    appearance: none
+    -webkit-appearance: none
+    padding-right: 2rem
+
+  &::before
+    content: '\f103'
+    font-family: 'Font Awesome 7 Pro'
+    font-weight: 900
+    position: absolute
+    right: 1rem
+    top: 50%
+    transform: translateY(-50%)
+    pointer-events: none
+
+
 input, select, textarea
   width: 100%
   box-sizing: border-box

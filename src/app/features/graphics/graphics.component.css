@@ -10,7 +10,7 @@ Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontM
 11:   font-family: c.$fontMain
 12:   display: flex
 13:   flex-direction: column
-14:   gap: 10rem
+14:   gap: 6rem
 15:   justify-content: center
 16:   align-items: center
 
@@ -50,4 +50,4 @@ graphics.component.sass:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontMain\"\A         on line 11 of graphics.component.sass\A \A 6: $colorThirdBox: #c5a1ec\A 7: $colorFourthBox: #fbda9d\A 8: \A 9: \A 10: :host\A 11:   font-family: c.$fontMain\A 12:   display: flex\A 13:   flex-direction: column\A 14:   gap: 10rem\A 15:   justify-content: center\A 16:   align-items: center"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontMain\"\A         on line 11 of graphics.component.sass\A \A 6: $colorThirdBox: #c5a1ec\A 7: $colorFourthBox: #fbda9d\A 8: \A 9: \A 10: :host\A 11:   font-family: c.$fontMain\A 12:   display: flex\A 13:   flex-direction: column\A 14:   gap: 6rem\A 15:   justify-content: center\A 16:   align-items: center"; }

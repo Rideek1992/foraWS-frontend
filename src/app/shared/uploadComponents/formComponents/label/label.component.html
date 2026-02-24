@@ -14,26 +14,29 @@
     (blur)="handleBlur()"
   />
 } @else if (elementForm === 'select') {
+  <div class="selectWrapper">
   <label for="{{ textElement }}"
     >{{ textElement }}
     @if (requiredElement) {
       <span class="reqiredElement">* </span>
     }
   </label>
-  <select
-    name="{{ textElement }}"
-    id="{{ textElement }}"
-    [value]="value"
-    (change)="handleInput($event)"
-    (blur)="handleBlur()"
-  >
-    <option value=""></option>
-    @for (option of optionsForm; track option) {
-      <option [value]="textElement === 'Temat rozmowy' ? option.name : option">
-        {{ textElement === 'Temat rozmowy' ? option.name : option }}
-      </option>
-    }
-  </select>
+    <select
+      name="{{ textElement }}"
+      id="{{ textElement }}"
+      [value]="value"
+      (change)="handleInput($event)"
+      (blur)="handleBlur()"
+    >
+      <option value=""></option>
+      @for (option of optionsForm; track option) {
+        <option [value]="textElement === 'Temat rozmowy' ? option.name : option">
+          {{ textElement === 'Temat rozmowy' ? option.name : option }}
+        </option>
+      }
+    </select>
+  </div>
+
 } @else if (elementForm === 'textarea') {
   <label for="{{ textElement }}"
     >{{ textElement }}

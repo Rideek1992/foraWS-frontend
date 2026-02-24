@@ -4,13 +4,17 @@ import { ApibackandService} from "../../core/apibackand.service";
 import {
   ScopeServiceComponent
 } from "../../shared/components/scope-service/scope-service.component";
+import {
+  ButtonLinkComponent
+} from "../../shared/uploadComponents/button-link/button-link.component";
 
 @Component({
   selector: 'app-graphics',
   standalone: true,
   imports: [
     HeroComponent,
-    ScopeServiceComponent
+    ScopeServiceComponent,
+    ButtonLinkComponent
   ],
   templateUrl: './graphics.component.html',
   styleUrl: './graphics.component.sass'

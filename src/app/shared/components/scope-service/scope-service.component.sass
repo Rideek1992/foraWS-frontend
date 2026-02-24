@@ -51,6 +51,11 @@
       font-size: c.$fontSizeSmallText
       font-weight: 100
       position: relative
+      display: flex
+      flex-direction: row
+      justify-content: start
+      align-items: center
+      gap: 2rem
 
       &::before
         content: "\f336"
@@ -58,4 +63,4 @@
         font-weight: 100
         font-size: c.$fontSizeSmallText * 0.9
         margin-right: 1rem
-        color: inherit
+        color: c.$mainColor
