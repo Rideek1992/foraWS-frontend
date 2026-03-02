@@ -22,11 +22,12 @@ import {
 export class GraphicsComponent implements OnInit {
 
   constructor(private api: ApibackandService){}
+  pageName:string = 'graphics'
 
   dataElements:any =[]
 
   ngOnInit(){
-    this.api.getGraphicElements().subscribe({
+    this.api.getGraphicElements(this.pageName).subscribe({
       next: (data) => {
         this.dataElements = data.data
       },

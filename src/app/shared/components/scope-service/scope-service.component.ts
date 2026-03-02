@@ -20,5 +20,6 @@ export class ScopeServiceComponent {
 
   @Input() data?:any
   @Input() isReverse?:boolean = false
+  @Input() pageName?:string = ''
 
 }

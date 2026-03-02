@@ -32,7 +32,11 @@ export class ApibackandService {
     return this.http.get(enviroment.apiUrl + `/api/fora-ws-hero-section-modes?filters[page_name][$eq]=`+namePage+`&populate=*`);
   }
 
-  getGraphicElements():Observable<any>{
+  getGraphicElements(pageName?:string):Observable<any>{
+    if(pageName){
+      return this.http.get(enviroment.apiUrl  +
+      '/api/fora-ws-graphic-pages?filters[page_name][$eq]=' + pageName + '&populate=*');
+    }
     return this.http.get(enviroment.apiUrl  +
       '/api/fora-ws-graphic-pages?populate=*');
   }

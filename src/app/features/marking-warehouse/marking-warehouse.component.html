@@ -26,4 +26,10 @@
         ułatwia wdrażanie nowych pracowników</li>
     </ul>
   </div>
+  <div class="scopeOfServiceElement">
+    <h4>Zakres usług</h4>
+    @for (data of dataElements; track data.id; let i = $index){
+      <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
+    }
+  </div>
 </div>
