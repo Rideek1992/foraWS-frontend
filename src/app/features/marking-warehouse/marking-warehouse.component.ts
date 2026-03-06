@@ -8,6 +8,9 @@ import {JsonPipe} from "@angular/common";
 import {
   BenefitListComponent
 } from "../../shared/uploadComponents/benefit-list/benefit-list.component";
+import {
+  ButtonLinkComponent
+} from "../../shared/uploadComponents/button-link/button-link.component";
 
 @Component({
   selector: 'app-marking-warehouse',
@@ -16,7 +19,8 @@ import {
     HeroComponent,
     ScopeServiceComponent,
     JsonPipe,
-    BenefitListComponent
+    BenefitListComponent,
+    ButtonLinkComponent
   ],
   templateUrl: './marking-warehouse.component.html',
   styleUrl: './marking-warehouse.component.sass'
@@ -29,7 +33,7 @@ export class MarkingWarehouseComponent implements OnInit {
   dataElements:any =[]
   benefitnsList:any =[]
   dataForWho:any = []
-
+  dataWhyWe:any = []
 
   ngOnInit(){
     this.api.getGraphicElements(this.pageName).subscribe({
@@ -59,6 +63,17 @@ export class MarkingWarehouseComponent implements OnInit {
         console.log(err.error.message)
       }
     })
+
+    this.api.getSiteMarkingWarehouse('why_we').subscribe({
+      next: (data) => {
+        this.dataWhyWe = data.data.map((item:any) => item.why_we)
+      },
+      error: (err) => {
+        console.log(err.error.message)
+      }
+    })
+
+
   }
 
 }

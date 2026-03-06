@@ -101,7 +101,7 @@ $colorLineOne: #E3E0E0ED
 
 
 
-.benefitsSection, .forWhoSection
+.benefitsSection, .forWhoSection, .whyWeSection, .CTASection
   grid-column: 1 / -1
   //background-color: pink
   display: grid
@@ -174,3 +174,61 @@ $colorLineOne: #E3E0E0ED
       flex-direction: column
       justify-content: center
       align-items: center
+
+
+.whyWeElements
+  margin: 0 auto
+  width: 70%
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 4rem
+
+
+  .elemetnWyWe
+    display: grid
+    grid-template-columns: 1fr 0.1fr 1fr
+    grid-gap: 1rem 0
+
+    h6
+      width: 100%
+      grid-column: 1 / -1
+      padding: 2rem 0
+      border-bottom: 1px solid $colorLineOne
+      text-align: center
+
+    p
+      font-size: c.$fontSizeSmallText * 0.9
+      letter-spacing: 1px
+      padding: 0 1rem
+      //text-align: center
+
+
+    .left
+      width: 100%
+      grid-column: 1 / span 1
+
+
+    .right
+      width: 100%
+      grid-column: 3 / span 1
+
+
+
+    .separator
+      grid-column: 2 / span 1
+      width: 1px
+      height: 100%
+      background-color: $colorLineOne
+      justify-self: center
+
+
+    &:first-child
+      margin-top: 2rem
+
+    &:last-child
+      margin-bottom: 2rem
+
+
+.CTASection
+  app-button-link
+    justify-self: center

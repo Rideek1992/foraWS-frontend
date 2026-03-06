@@ -59,4 +59,34 @@
       }
     </div>
   </div>
+  <div class="whyWeSection">
+    <h3>Dlaczego Fora Warehouse System</h3>
+    <h6>System oznaczeń projektowany w oparciu o realne procesy operacyjne</h6>
+    <p>
+      W wielu magazynach oznakowanie powstaje jako element graficzny lub organizacyjny.
+      My projektujemy je jako część systemu operacyjnego magazynu.
+    </p>
+    <p>
+      Łączymy doświadczenie logistyczne z projektowaniem systemów identyfikacji przestrzeni magazynowej, dzięki czemu oznaczenia wspierają rzeczywiste procesy operacyjne.
+    </p>
+    <div class="whyWeElements">
+      @for (element of dataWhyWe; track $index ; let i = $index) {
+        <div class="elemetnWyWe">
+          <h6>{{ element.title }}</h6>
+          <p class="left">{{element.first_paragraph}}</p>
+          <div class="separator"></div>
+          <p class="right">{{element.second_paragraph}}</p>
+        </div>
+      }
+    </div>
+    <p>Fora Warehouse System łączy doświadczenie logistyczne z projektowaniem systemów oznaczeń, które realnie wspierają funkcjonowanie magazynów i obiektów przemysłowych.</p>
+  </div>
+  <div class="CTASection">
+    <h3>Porozmawiajmy o oznakowaniu Twojego magazynu</h3>
+    <p>Jeśli planujesz wdrożenie systemu oznaczeń w magazynie lub chcesz uporządkować istniejącą infrastrukturę oznaczeń, możemy przygotować projekt dopasowany do specyfiki Twojego obiektu i procesów operacyjnych.
+    </p>
+    <p>Każdy projekt rozpoczynamy od analizy infrastruktury magazynowej oraz sposobu funkcjonowania procesów logistycznych w organizacji.
+    </p>
+    <app-button-link name="umów konsultacje" link="contact"></app-button-link>
+  </div>
 </div>

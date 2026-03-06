@@ -6,7 +6,7 @@ Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$mainC
 2: 
 3: .buttonLinkElement
 4:   background-color: c.$mainColor
-5:   display: flex
+5:   display: inline-block
 6:   justify-content: center
 7:   align-items: center
 8:   border-radius: 2rem
@@ -48,4 +48,4 @@ button-link.component.sass:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$mainColor\"\A         on line 4 of button-link.component.sass\A \A 1: @use 'styles' as c\A 2: \A 3: .buttonLinkElement\A 4:   background-color: c.$mainColor\A 5:   display: flex\A 6:   justify-content: center\A 7:   align-items: center\A 8:   border-radius: 2rem\A 9:   transition: all 0.2s ease-in-out"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$mainColor\"\A         on line 4 of button-link.component.sass\A \A 1: @use 'styles' as c\A 2: \A 3: .buttonLinkElement\A 4:   background-color: c.$mainColor\A 5:   display: inline-block\A 6:   justify-content: center\A 7:   align-items: center\A 8:   border-radius: 2rem\A 9:   transition: all 0.2s ease-in-out"; }
