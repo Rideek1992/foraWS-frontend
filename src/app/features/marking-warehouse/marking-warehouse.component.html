@@ -32,4 +32,31 @@
       <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
     }
   </div>
+  <div class="benefitsSection">
+    <h3>Realne korzyści operacyjne</h3>
+    <h6>Oznakowanie jako element efektywności operacyjnej</h6>
+    <p>W środowisku magazynowym dobrze zaprojektowany system oznaczeń wpływa bezpośrednio na tempo pracy, poziom błędów oraz bezpieczeństwo operacyjne.
+      Poniżej przedstawiono kluczowe obszary, w których system oznakowania realnie wspiera funkcjonowanie magazynu.</p>
+    <div class="benefitsList">
+      @for(data of benefitnsList; track $index; let index = $index ){
+        <app-benefit-list [index]="index" [dataBenefits]="data" ></app-benefit-list>
+      }
+
+
+    </div>
+  </div>
+  <div class="forWhoSection">
+    <h3>Dla kogo jest ta usługa</h3>
+    <h6>Dla jakich organizacji projektujemy systemy oznaczeń</h6>
+    <p>Wspieramy firmy, w których oznakowanie magazynu wpływa bezpośrednio na efektywność operacyjną, bezpieczeństwo pracy oraz jakość realizowanych procesów logistycznych.</p>
+    <div class="forWhooElements">
+      @for (element of dataForWho; track $index; let index =  $index) {
+        <div class="elementForWhoo">
+          <i class="{{element.icon_fa}}"></i>
+          <h6>{{element.title}}</h6>
+          <p>{{element.description}}</p>
+        </div>
+      }
+    </div>
+  </div>
 </div>

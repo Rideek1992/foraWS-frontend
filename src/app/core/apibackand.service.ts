@@ -44,4 +44,14 @@ export class ApibackandService {
   informationBackendMail(orderId: number) {
     return this.http.post(enviroment.backendMailerURL, { orderId });
   }
+
+
+  getBenefitsList():Observable<any>{
+    return this.http.get(enviroment.apiUrl + '/api/fora-ws-benefits-lists');
+  }
+
+  getSiteMarkingWarehouse(element:string):Observable<any>{
+    return this.http.get(enviroment.apiUrl + '/api/fora-ws-marking-warehouses?filters['+element+'][$notNull]=true&populate=*');
+  }
+
 }

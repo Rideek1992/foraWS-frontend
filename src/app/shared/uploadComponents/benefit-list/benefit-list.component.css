@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontMain"
-        on line 7 of marking-warehouse.component.sass
+Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontSizeMediu..."
+        on line 22 of benefit-list.component.sass
 
-2: 
-3: $paddingList: 1rem
-4: $colorLineOne: #E3E0E0ED
-5: 
-6: :host
-7:   font-family: c.$fontMain
-8:   display: flex
-9:   flex-direction: column
-10:   gap: 6rem
-11:   justify-content: center
-12:   align-items: center
+17:     border-top: 1px solid $colorLineOBrder
+18: 
+19: 
+20:   h4
+21:     grid-column: 1 / -1
+22:     font-size: c.$fontSizeMediumText
+23:     font-weight: 300
+24:     padding: $paddingList
+25:     border-bottom: 1px solid $colorLineOBrder
+26:     background-color: lighten(c.$fontColorDark,70%)
+27: 
 
 Backtrace:
-marking-warehouse.component.sass:7
+benefit-list.component.sass:22
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -27,6 +27,12 @@ marking-warehouse.component.sass:7
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:707:in `parse_property_or_rule'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:666:in `parse_line'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:548:in `block in build_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:541:in `build_tree'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
@@ -50,4 +56,4 @@ marking-warehouse.component.sass:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontMain\"\A         on line 7 of marking-warehouse.component.sass\A \A 2: \A 3: $paddingList: 1rem\A 4: $colorLineOne: #E3E0E0ED\A 5: \A 6: :host\A 7:   font-family: c.$fontMain\A 8:   display: flex\A 9:   flex-direction: column\A 10:   gap: 6rem\A 11:   justify-content: center\A 12:   align-items: center"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontSizeMediu...\"\A         on line 22 of benefit-list.component.sass\A \A 17:     border-top: 1px solid $colorLineOBrder\A 18: \A 19: \A 20:   h4\A 21:     grid-column: 1 / -1\A 22:     font-size: c.$fontSizeMediumText\A 23:     font-weight: 300\A 24:     padding: $paddingList\A 25:     border-bottom: 1px solid $colorLineOBrder\A 26:     background-color: lighten(c.$fontColorDark,70%)\A 27: "; }

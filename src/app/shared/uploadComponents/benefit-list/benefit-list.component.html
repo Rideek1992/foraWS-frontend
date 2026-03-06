@@ -1,0 +1,12 @@
+<div  class="benefitsElement" [ngClass]="{firstChild : index === 0 }" >
+  <h4><span>0{{ Number(index) + 1 }}</span> {{dataBenefits.title}}</h4>
+  <div class="operationArea">
+    <h6 class="headingH6">Obszar operacyjny</h6>
+       <markdown data="{{dataBenefits.operation_list}}"></markdown>
+    </div>
+  <i class="fa-sharp fa-light fa-arrow-right-long"></i>
+  <div class="effectArea">
+    <h6 class="headingH6">Efekt</h6>
+    <p>{{dataBenefits.effect_description}}</p>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+@use 'styles' as c
+
+$paddingList: 1rem
+$colorLineOBrder: #ecececec
+
+
+
+
+.benefitsElement
+  display: grid
+  grid-template-columns: repeat(2, 1fr) 0.5fr repeat(2, 1fr)
+  border: 1px solid $colorLineOBrder
+  border-top: none
+  //background-color: pink
+
+  &.firstChild
+    border-top: 1px solid $colorLineOBrder
+
+
+  h4
+    grid-column: 1 / -1
+    font-size: c.$fontSizeMediumText
+    font-weight: 300
+    padding: $paddingList
+    border-bottom: 1px solid $colorLineOBrder
+    background-color: lighten(c.$fontColorDark,70%)
+
+    span
+      font-size: inherit
+      width: 5%
+      display: inline-block
+      opacity: 30%
+
+
+  .operationArea
+    grid-column: 1 / span 2
+    border-right: 1px solid $colorLineOBrder
+
+
+    ul
+      list-style: none
+      display: flex
+      flex-direction: column
+
+
+      ul
+        list-style: none
+
+
+  i
+    width: 100%
+    grid-column: 3 / span 1
+    font-size: c.$fontSizeBigText * 2
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #b5b5b5
+
+  .effectArea
+    grid-column: 4 / span 2
+    display: flex
+    flex-direction: column
+    border-left: 1px solid $colorLineOBrder
+
+
+    p
+      font-size:  c.$fontSizeSmallText * 0.8
+      display: flex
+      height: 100%
+      justify-content: center
+      align-items: center
+      padding: $paddingList
+      font-weight: 100
+
+
+:host ::ng-deep markdown
+
+  ul
+    list-style: none
+
+    li
+      font-size: c.$fontSizeSmallText * 0.8
+      font-weight: 100
+      padding: 1rem
+
+
+
+.headingH6
+  width: 100%
+  font-size: c.$fontSizeSmallText
+  padding: $paddingList
+  border-bottom: 1px solid $colorLineOBrder
+  font-weight: 300
+  //background-color: #a6e7f3
