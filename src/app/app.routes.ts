@@ -72,7 +72,19 @@ export const routes: Routes = [
     }
   },
   {path: 'drone-services', component: DroneServicesComponent},
-  {path: 'print-companes', component: PrintCompaniesComponent},
+  {path: 'print-companes', component: PrintCompaniesComponent,
+  data :{
+    seo: {
+      title: 'Poligrafia dla firm | Wizytówki, ulotki, etykiety i materiały drukowane | FORA',
+      description: 'Projektujemy i realizujemy materiały drukowane dla firm: wizytówki, ulotki, broszury, etykiety, naklejki, tabliczki i poligrafię użytkową. Estetyczne i praktyczne rozwiązania dla biznesu.',
+      keywords: 'poligrafia dla firm, materiały drukowane dla firm, wizytówki firmowe,' +
+        ' ulotki reklamowe, broszury firmowe, etykiety samoprzylepne, naklejki dla firm, tabliczki informacyjne, druk reklamowy, poligrafia biznesowa, materiały marketingowe B2B, projekt i druk materiałów firmowych',
+      canonical: 'https://fora-ws.pl/print-companes',
+      robots: 'index,follow'
+    }
+  }
+  },
+
   {path: 'privacy-policy', component: PrivacyPolicyComponent},
   {path: 'data-analytics', component: DataAnalysisComponent},
   {path: 'website-creation', component: WebsiteCreationComponent},

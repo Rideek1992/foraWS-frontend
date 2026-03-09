@@ -1,0 +1,132 @@
+@use 'styles' as c
+
+$zeroColor: #EAF4FF
+$oneColor: #F3EEFF
+$twoColor: #EAFBF3
+$threeColor: #FFF4E8
+
+
+
+:host
+  display: grid
+  grid-template-columns: 1fr
+  justify-content: center
+  align-items: center
+  grid-gap: 2rem
+
+
+
+.servicePhilosophySection
+  display: grid
+  grid-template-columns: 1fr
+  gap: 3rem
+  justify-items: center
+  align-items: center
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 500
+    justify-self: center
+
+  .sectionDescription
+    display: grid
+    grid-template-columns: 1fr
+    gap: 2rem
+    justify-items: center
+    align-items: center
+
+    h4
+      font-size: c.$fontSizeMediumText * 1.1
+      font-weight: 200
+
+    p
+      font-size: c.$fontSizeSmallText
+      font-weight: 100
+
+
+
+.elemntsDescritption
+  display: grid
+  grid-template-columns: 1fr
+  gap: 5rem
+  justify-items: center
+  align-items: center
+
+  h6
+    font-size: c.$fontSizeMediumText
+    font-weight: 200
+
+  .sectionElements
+    display: flex
+    flex-direction: row
+    gap: 5rem
+    flex-wrap: wrap
+    justify-content: space-around
+
+    .element
+      width: 20%
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 2rem
+
+      i
+        //width: 100%
+        height: 100%
+        aspect-ratio: 1 / 1
+        font-size: 4rem
+        padding: 3rem
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 1rem
+        outline: 0.8px dashed
+        outline-offset: 0.6rem
+        color: lighten(c.$fontColorDark,20%)
+
+
+
+      p
+        width: 100%
+        text-align: center
+        font-size: c.$fontSizeSmallText * 0.8
+        font-weight: 300
+        line-height: 2rem
+        letter-spacing: 1px
+
+
+      &.zero
+        i
+          background-color: $zeroColor
+          outline-color: darken($zeroColor, 60%)
+
+
+      &.one
+        i
+          background-color: $oneColor
+          outline-color: darken($oneColor, 60%)
+
+      &.two
+        i
+          background-color: $twoColor
+          outline-color: darken($twoColor, 60%)
+
+      &.three
+        i
+          background-color: $threeColor
+          outline-color: darken($threeColor, 60%)
+
+
+
+.scopeElementsPrints
+  display: grid
+  grid-template-columns: 1fr
+  gap: 5rem
+  justify-items: center
+  align-items: center
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 300

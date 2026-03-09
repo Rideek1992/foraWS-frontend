@@ -1,1 +1,42 @@
-<p>print-companies works!</p>
+<app-hero></app-hero>
+<div class="servicePhilosophySection">
+  <h2>
+    POLIGRAFIA JAKO NARZĘDZIE KOMUNIKACJI
+  </h2>
+   <div class="sectionDescription">
+     <h4>Materiały drukowane, które wspierają wizerunek i codzienną pracę firmy</h4>
+     <p>W środowisku biznesowym materiały drukowane nie są wyłącznie dodatkiem wizualnym. Pełnią funkcję praktyczną, porządkują komunikację marki, wspierają sprzedaż i budują profesjonalny odbiór firmy na każdym etapie kontaktu z klientem.</p>
+     <p>
+       Projektujemy i przygotowujemy rozwiązania poligraficzne dopasowane do charakteru działalności, potrzeb operacyjnych i sposobu, w jaki firma chce prezentować swoją ofertę.
+     </p>
+     <div class="elemntsDescritption">
+       <h6>Dobrze zaprojektowana poligrafia</h6>
+       <div class="sectionElements">
+         <div class="element zero">
+           <i class="fa-sharp fa-light fa-sitemap"></i>
+           <p>porządkuje komunikację marki</p>
+         </div>
+         <div class="element one">
+           <i class="fa-sharp fa-light fa-badge-check"></i>
+           <p>wzmacnia profesjonalny wizerunek</p>
+         </div>
+         <div class="element two">
+           <i class="fa-sharp fa-light fa-presentation-screen"></i>
+           <p>wspiera sprzedaż i prezentację oferty</p>
+         </div>
+         <div class="element three">
+           <i class="fa-light fa-message"></i>
+           <p>ułatwia codzienny kontakt z klientem</p>
+         </div>
+       </div>
+
+     </div>
+     <p>Tworzymy materiały, które łączą estetykę, czytelność i praktyczne zastosowanie — bez zbędnej formy, za to z realną wartością dla biznesu.</p>
+   </div>
+</div>
+<div class="scopeElementsPrints">
+  <h4>Zakres Usług</h4>
+  @for (data of elementPrint; track data.id; let i = $index){
+    <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
+  }
+</div>
