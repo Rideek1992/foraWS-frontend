@@ -1,29 +1,80 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './features/home/home.component';
-import { AboutUsComponent } from './features/about-us/about-us.component';
-import { GraphicsComponent } from './features/graphics/graphics.component';
-import { MarkingWarehouseComponent } from './features/marking-warehouse/marking-warehouse.component';
-import { DroneServicesComponent } from './features/drone-services/drone-services.component';
-import { PrintCompaniesComponent } from './features/print-companies/print-companies.component';
-import { PortfolioComponent } from './features/portfolio/portfolio.component';
-import { RecommendationsComponent } from './features/recommendations/recommendations.component';
-import { ContactComponent } from './features/contact/contact.component';
-import { PrivacyPolicyComponent } from './features/privacy-policy/privacy-policy.component';
-import { DataAnalysisComponent } from './features/data-analysis/data-analysis.component';
-import { WebsiteCreationComponent } from './features/website-creation/website-creation.component';
+import {Routes} from '@angular/router';
+import {HomeComponent} from './features/home/home.component';
+import {AboutUsComponent} from './features/about-us/about-us.component';
+import {GraphicsComponent} from './features/graphics/graphics.component';
+import {
+  MarkingWarehouseComponent
+} from './features/marking-warehouse/marking-warehouse.component';
+import {DroneServicesComponent} from './features/drone-services/drone-services.component';
+import {
+  PrintCompaniesComponent
+} from './features/print-companies/print-companies.component';
+import {PortfolioComponent} from './features/portfolio/portfolio.component';
+import {
+  RecommendationsComponent
+} from './features/recommendations/recommendations.component';
+import {ContactComponent} from './features/contact/contact.component';
+import {PrivacyPolicyComponent} from './features/privacy-policy/privacy-policy.component';
+import {DataAnalysisComponent} from './features/data-analysis/data-analysis.component';
+import {
+  WebsiteCreationComponent
+} from './features/website-creation/website-creation.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'recommendations', component: RecommendationsComponent },
-  { path: 'graphics', component: GraphicsComponent },
-  { path: 'marking-warehouse', component: MarkingWarehouseComponent },
-  { path: 'drone-services', component: DroneServicesComponent },
-  { path: 'print-companes', component: PrintCompaniesComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'data-analytics', component: DataAnalysisComponent },
-  { path: 'website-creation', component: WebsiteCreationComponent },
-  { path: '**', redirectTo: '' },
+  {
+    path: '', component: HomeComponent,
+    data: {
+      seo: {
+        title: 'FORA Warehouse System | Oznakowanie magazynów i projekty dla logistyki',
+        description: 'Kompleksowe oznakowanie magazynów, projekty graficzne, identyfikacja lokalizacji, tablice, etykiety i rozwiązania wizualne dla logistyki oraz przemysłu.',
+        canonical: 'https://fora-ws.pl',
+        keywords: 'oznaczenie magazynu, oznakowanie magazynów, etykiety magazynowe, znakowanie regałów, identyfikacja lokalizacji, projekty graficzne dla firm, logistyka magazynowa',
+        robots: 'index, follow',
+      }
+    }
+  },
+  {
+    path: 'contact', component: ContactComponent,
+    data: {
+      seo: {
+        title: 'Kontakt | FORA Warehouse System',
+        description: 'Skontaktuj się z FORA Warehouse System w sprawie oznakowania magazynów, projektów graficznych, etykiet, tablic informacyjnych i wdrożeń dla logistyki.',
+        canonical: 'https://fora-ws.pl/contact',
+        keywords: 'kontakt oznakowanie magazynu, kontakt projekty graficzne, FORA Warehouse System kontakt, zapytanie o ofertę oznakowania',
+        robots: 'index,follow'
+      }
+    }
+  },
+  {path: 'about-us', component: AboutUsComponent},
+  {path: 'portfolio', component: PortfolioComponent},
+  {path: 'recommendations', component: RecommendationsComponent},
+  {
+    path: 'graphics', component: GraphicsComponent,
+    data: {
+      seo: {
+        title: 'Projekty graficzne | FORA Warehouse System',
+        description: 'Tworzymy profesjonalne projekty graficzne dla firm: tablice, oznaczenia, grafiki użytkowe, materiały reklamowe, identyfikację wizualną i rozwiązania dla magazynów oraz przemysłu.',
+        canonical: 'https://fora-ws.pl/graphics',
+        keywords: 'projekty graficzne dla firm, grafika użytkowa, projekty tablic informacyjnych, identyfikacja wizualna firmy, grafiki reklamowe, projekty dla magazynów',
+        robots: 'index,follow'
+      }
+    }
+  },
+  {
+    path: 'marking-warehouse', component: MarkingWarehouseComponent, data: {
+      seo: {
+        title: 'Znakowanie magazynów | FORA Warehouse System',
+        description: 'Projektujemy i wdrażamy profesjonalne znakowanie magazynów: oznaczenia regałów, miejsc paletowych, stref, ciągów komunikacyjnych oraz systemy identyfikacji lokalizacji.',
+        canonical: 'https://fora-ws.pl/marking-warehouse',
+        keywords: 'znakowanie magazynów, oznakowanie regałów, oznaczenia miejsc paletowych, identyfikacja lokalizacji magazynowych, oznaczenia magazynowe, etykiety magazynowe',
+        robots: 'index,follow'
+      }
+    }
+  },
+  {path: 'drone-services', component: DroneServicesComponent},
+  {path: 'print-companes', component: PrintCompaniesComponent},
+  {path: 'privacy-policy', component: PrivacyPolicyComponent},
+  {path: 'data-analytics', component: DataAnalysisComponent},
+  {path: 'website-creation', component: WebsiteCreationComponent},
+  {path: '**', redirectTo: ''},
 ];

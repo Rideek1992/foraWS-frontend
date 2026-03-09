@@ -1,21 +1,21 @@
 /*
 Error: Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.
-        on line 59 of label.component.sass
+        on line 60 of label.component.sass
 
-54:   height: 100%
 55:   grid-column: 1 / -1
 56: 
 57: 
-58: .checkboxItem
-59:    input
-60:     width: 1.5rem
-61:     accent-color: c.$mainColor
-62: 
+58: 
+59: .checkboxItem
+60:    input
+61:     width: 1.5rem
+62:     accent-color: c.$mainColor
 63: 
 64: 
+65: 
 
 Backtrace:
-label.component.sass:59
+label.component.sass:60
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:494:in `block in tabulate'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each_with_index'
@@ -34,4 +34,4 @@ label.component.sass:59
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 59 of label.component.sass\A \A 54:   height: 100%\A 55:   grid-column: 1 / -1\A 56: \A 57: \A 58: .checkboxItem\A 59:    input\A 60:     width: 1.5rem\A 61:     accent-color: c.$mainColor\A 62: \A 63: \A 64: "; }
+  content: "Error: Inconsistent indentation: 3 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 60 of label.component.sass\A \A 55:   grid-column: 1 / -1\A 56: \A 57: \A 58: \A 59: .checkboxItem\A 60:    input\A 61:     width: 1.5rem\A 62:     accent-color: c.$mainColor\A 63: \A 64: \A 65: "; }

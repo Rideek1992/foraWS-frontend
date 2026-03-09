@@ -57,7 +57,6 @@ export class MarkingWarehouseComponent implements OnInit {
     this.api.getSiteMarkingWarehouse('for_who').subscribe({
       next: (data) => {
         this.dataForWho = data.data.map((item:any) => item.for_who)
-        console.log(this.dataForWho)
       },
       error: (err) => {
         console.log(err.error.message)
