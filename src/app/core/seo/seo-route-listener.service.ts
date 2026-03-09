@@ -10,7 +10,7 @@ import {SeoData} from './seo.model';
 @Injectable({
   providedIn: 'root'
 })
-export class SeoRouteListenerService {
+class SeoRouteListenerService {
 
   constructor(
     private router: Router,
@@ -24,13 +24,21 @@ export class SeoRouteListenerService {
     this. router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
-        let route = this.activatedRoute
-
-        while (route.firstChild){
-          route = route.firstChild
-        }
-
-        const seo = route.snapshot.data['seo'] as SeoData | undefined;
-        this.seoService.update(seo)
+       this.updateSeoFromRoute()
       })
-}}
+}
+  private updateSeoFromRoute(){
+    let route = this.activatedRoute.root
+
+    while (route.firstChild){
+      route = route.firstChild
+    }
+
+    const seo = route.snapshot.data['seo'] as SeoData | undefined;
+    this.seoService.update(seo)
+  }
+}
+
+
+
+export default SeoRouteListenerService

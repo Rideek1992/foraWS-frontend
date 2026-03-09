@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SeoRouteListenerService } from './seo-route-listener.service';
+import SeoRouteListenerService from './seo-route-listener.service';
 
 describe('SeoRouteListenerService', () => {
   let service: SeoRouteListenerService;
