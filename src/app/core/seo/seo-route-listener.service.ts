@@ -21,13 +21,11 @@ class SeoRouteListenerService {
 
 
   init(): void {
-    console.log('SEO LISTENER START')
     this.updateSeoFromRoute()
 
     this. router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
-        console.log('SEO LISTENER END')
        this.updateSeoFromRoute()
       })
 }
@@ -37,8 +35,6 @@ class SeoRouteListenerService {
     while (route.firstChild){
       route = route.firstChild
     }
-    console.log('ROUTE PATH:', route.snapshot.routeConfig?.path);
-    console.log('ROUTE DATA:', route.snapshot.data);
 
     const seo = route.snapshot.data['seo'] as SeoData | undefined;
     this.seoService.update(seo)

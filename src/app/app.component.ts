@@ -17,7 +17,6 @@ export class AppComponent  implements OnInit{
   constructor(private seoRouteListener: SeoRouteListenerService) { }
 
   ngOnInit() {
-    document.title = 'PROD TEST 1234';
     this.seoRouteListener.init();
   }
 
