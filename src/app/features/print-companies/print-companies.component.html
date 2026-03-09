@@ -40,3 +40,32 @@
     <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
   }
 </div>
+<div class="profitsCompanySection">
+  <h3>
+    Korzyści biznesowe
+  </h3>
+  <div class="profitsDescription">
+    <h6>Co zyskuje Twoja firma</h6>
+    <p>Dobrze przygotowane materiały drukowane wspierają nie tylko wizerunek marki, ale także codzienną komunikację, sprzedaż i organizację pracy. To narzędzia, które pomagają firmie działać spójnie, profesjonalnie i czytelnie w każdym punkcie kontaktu z klientem.</p>
+    <ul>
+      <li>spójna komunikacja marki</li>
+      <li>lepsza prezentacja oferty</li>
+      <li>praktyczne wsparcie sprzedaży i obsługi</li>
+    </ul>
+    <p>Poligrafia, która dobrze wygląda i realnie pracuje na biznes.</p>
+  </div>
+  <div class="profitsElements">
+    @for (item of elementProfits; track $index; let i = $index) {
+      <div class="elemetProf">
+        <div class="headerElem">
+          <p class="profitsNumber">Korzyść <span>{{i + 1}}</span></p>
+          <h6 [ngClass]="activeIndex === i? 'activElement' : ''" (click)="changeIndex(i)"
+          >{{item.title}}</h6>
+          <p class="lead" [ngClass]="activeIndex === i ? 'active' : ''">{{item.lead}}</p>
+        </div>
+
+
+      </div>
+    }
+  </div>
+</div>
