@@ -39,9 +39,9 @@
     </app-button-menu-square>
   </div>
   <div class="secondMenu">
-    <app-link-menu nameInput="Kontakt" linkInput="contact"></app-link-menu>
-    <app-link-menu nameInput="O nas" linkInput="about-us"></app-link-menu>
-    <app-link-menu nameInput="Portfolio" linkInput="portfolio"></app-link-menu>
-    <app-link-menu nameInput="Rekomendacje" linkInput="recommendations"></app-link-menu>
+    <app-link-menu [activeInput]="true" nameInput="Kontakt" linkInput="contact"></app-link-menu>
+    <app-link-menu [activeInput]="true" nameInput="O nas"  linkInput="about-us"></app-link-menu>
+    <app-link-menu [activeInput]="false" nameInput="Portfolio"linkInput="portfolio"></app-link-menu>
+    <app-link-menu [activeInput]="false" nameInput="Rekomendacje"linkInput="recommendations"></app-link-menu>
   </div>
 </div>

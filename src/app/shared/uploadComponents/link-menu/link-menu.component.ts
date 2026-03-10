@@ -11,4 +11,5 @@ import { RouterLink } from '@angular/router';
 export class LinkMenuComponent {
   @Input() nameInput?: string;
   @Input() linkInput?: string;
+  @Input() activeInput?: boolean;
 }

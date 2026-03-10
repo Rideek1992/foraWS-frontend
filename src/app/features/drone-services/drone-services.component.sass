@@ -1,0 +1,89 @@
+@use 'styles' as c
+
+$colorLineOBrder: rgba(214, 214, 214, 0.93)
+
+
+:host
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+
+
+
+.whyDronInspection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 2rem
+
+  h2
+    font-size: c.$fontSizeBigText * 1.2
+    font-weight: 500
+    text-align: center
+
+  h6
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+    letter-spacing: 1px
+    text-align: start
+
+
+.boxDronInspection
+  display: flex
+  flex-direction: row
+  //gap: 1rem
+  width: 100%
+  flex-wrap: wrap
+  justify-content: center
+
+  .elementDrone
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    width: 40%
+    padding: 2rem
+
+
+    h6
+      font-size: c.$fontSizeMediumText * 0.8
+      font-weight: 300
+
+    p
+      font-size: c.$fontSizeSmallText * 0.8
+      font-weight: 100
+      width: 80%
+      text-align: center
+      margin: 0 auto
+
+
+  & .droneFirst
+    border-right: 1px solid $colorLineOBrder
+    border-bottom: 1px solid $colorLineOBrder
+
+  & .droneSecond
+    border-bottom: 1px solid $colorLineOBrder
+
+
+  & .droneThird
+    border-right: 1px solid $colorLineOBrder
+
+
+.scopeDroneSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+  .scopeElementDrone
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 5rem
