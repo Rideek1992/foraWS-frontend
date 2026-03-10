@@ -69,3 +69,23 @@
     }
   </div>
 </div>
+<div class="applicationExpectedSection">
+  <h3>Przykłady zastosowań</h3>
+  @for (item of elementApplications; track $index; let i = $index) {
+    <div class="elemetnAplication" >
+      <div class="photoElement"
+           [style.background-image]="'url('+ urlAddres + item.photo.url + ')'"></div>
+      <div class="headerText">
+        <i class="{{item.icon}}"></i>
+        <h6>{{item.title}}</h6>
+      </div>
+
+      <p>{{item.description}}</p>
+    </div>
+  }
+</div>
+<div class="CTASection">
+  <h4>Porozmawiajmy o materiałach, które będą pracować na Twoją firmę</h4>
+  <p>Dobrze przygotowana poligrafia wspiera sprzedaż, wzmacnia wizerunek i porządkuje komunikację marki. Przygotujemy materiały dopasowane do Twojej branży, celu i sposobu wykorzystania.</p>
+  <app-button-link name="skontaktuj sie z nami" link="contact"></app-button-link>
+</div>

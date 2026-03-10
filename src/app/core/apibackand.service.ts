@@ -51,7 +51,7 @@ export class ApibackandService {
   }
 
   getSiteMarkingWarehouse(element:string):Observable<any>{
-    return this.http.get(enviroment.apiUrl + '/api/fora-ws-marking-warehouses?filters['+element+'][$notNull]=true&populate=*');
+    return this.http.get(enviroment.apiUrl + '/api/fora-ws-marking-warehouses?filters['+element+'][$notNull]=true&populate['+element+'][populate]=*');
   }
 
 }

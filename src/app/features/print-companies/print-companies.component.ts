@@ -4,7 +4,12 @@ import {ApibackandService} from "../../core/apibackand.service";
 import {
   ScopeServiceComponent
 } from "../../shared/components/scope-service/scope-service.component";
-import {JsonPipe, NgClass} from "@angular/common";
+import {JsonPipe, NgClass, NgStyle} from "@angular/common";
+
+import {enviroment} from "../../../envirpments/enviroment";
+import {
+  ButtonLinkComponent
+} from "../../shared/uploadComponents/button-link/button-link.component";
 
 @Component({
   selector: 'app-print-companies',
@@ -13,7 +18,9 @@ import {JsonPipe, NgClass} from "@angular/common";
     HeroComponent,
     ScopeServiceComponent,
     JsonPipe,
-    NgClass
+    NgClass,
+    NgStyle,
+    ButtonLinkComponent
   ],
   templateUrl: './print-companies.component.html',
   styleUrl: './print-companies.component.sass'
@@ -24,7 +31,11 @@ export class PrintCompaniesComponent implements OnInit{
 
   elementPrint:any =[]
   elementProfits:any =[]
+  elementApplications:any =[]
+  urlAddres:string = enviroment.apiUrl
   activeIndex:number = -1
+  activeExample:string = ''
+
 
 
   pageName:string = 'print-companes'
@@ -40,10 +51,18 @@ export class PrintCompaniesComponent implements OnInit{
     this.api.getSiteMarkingWarehouse('print_companes').subscribe({
       next: (data) => {
         this.elementProfits = data.data.map((item:any) => item.print_companes)
-        console.log(this.elementProfits)
       },
       error: (err) => {error: (err.error.message)}
     })
+    this.api.getSiteMarkingWarehouse('application_example').subscribe({
+      next: (data) => {
+        this.elementApplications = data.data.map((item:any) => item.application_example)
+      },
+      error: (err) => {
+        console.log(err.error.message)
+      }
+      }
+    )
   }
 
   changeIndex(index:number){
@@ -52,8 +71,9 @@ export class PrintCompaniesComponent implements OnInit{
       return
     }
     this.activeIndex = index
-
   }
+
+
 
 
 }

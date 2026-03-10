@@ -12,7 +12,7 @@ $threeColor: #FFF4E8
   grid-template-columns: 1fr
   justify-content: center
   align-items: center
-  grid-gap: 2rem
+  grid-gap: 4rem
 
 
 
@@ -262,3 +262,99 @@ $threeColor: #FFF4E8
           transform: translateY(0)
           padding: 0 2rem 1.5rem 2rem
 
+
+.applicationExpectedSection
+  width: 100%
+  margin: 0 auto
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 3rem
+  justify-items: center
+  align-items: start
+
+
+  h3
+    grid-column: 1 / -1
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+
+  .elemetnAplication
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+    border-radius: 2rem
+    outline: 1px solid c.$fontColorLight
+    overflow: hidden
+    transition: all 0.2s ease-in-out
+
+    &:hover
+      transform: scale(1.1)
+
+
+
+    //gap: 2rem
+
+    .photoElement
+      display: block
+      width: 100%
+      height: 18rem
+      background-size: cover
+      background-position: center
+
+    .headerText
+      display: flex
+      flex-direction: row
+      align-items: center
+      gap: 3rem
+      position: relative
+      background-color: #F3F4F6
+
+      i
+        position: relative
+        top: -2rem
+        left: 1rem
+        height: 5rem
+        width: 5rem
+        aspect-ratio: 1 / 1
+        font-size: 3rem
+        background-color: #C9D4E2
+        color: #1F1F1F
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        outline: 1px dashed black
+        outline-offset: 5px
+
+      h6
+        font-size: c.$fontSizeMediumText * 0.8
+        font-weight: 500
+
+
+    p
+      font-size: c.$fontSizeSmallText
+      font-weight: 100
+      padding: 0 1rem
+      margin: 2rem 0
+      letter-spacing: 1px
+      text-align: center
+
+
+.CTASection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 2rem
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 200
+    text-align: center
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+    letter-spacing: 1px
+
+  ::ng-deep app-button-link
+    justify-self: center
