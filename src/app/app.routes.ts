@@ -71,7 +71,17 @@ export const routes: Routes = [
       }
     }
   },
-  {path: 'drone-services', component: DroneServicesComponent},
+  {path: 'drone-services', component: DroneServicesComponent, data: { seo: {
+        title: 'Usługi dronowe dla hal, magazynów i obiektów przemysłowych | Fora' +
+          ' Warehouse System',
+        description: 'Realizujemy usługi dronowe dla hal, magazynów i obiektów' +
+          ' przemysłowych. Dokumentacja foto i wideo z powietrza, wizualna ocena obiektów oraz rozwój oferty o kolejne inspekcje specjalistyczne.',
+        keywords: 'usługi dronowe, inspekcje dronowe, dron magazyn, dron hala,' +
+          ' dokumentacja dronowa, zdjęcia z drona, wideo z drona, inspekcja dachu dronem, inspekcja elewacji dronem, dron obiekty przemysłowe',
+        canonical: 'https://fora-ws.pl/drone-services',
+        robots: 'index,follow'
+
+      }}},
   {path: 'print-companes', component: PrintCompaniesComponent,
   data :{
     seo: {
