@@ -4,13 +4,17 @@ import {ApibackandService} from "../../core/apibackand.service";
 import {
   ScopeServiceComponent
 } from "../../shared/components/scope-service/scope-service.component";
+import {
+  ButtonLinkComponent
+} from "../../shared/uploadComponents/button-link/button-link.component";
 
 @Component({
   selector: 'app-drone-services',
   standalone: true,
   imports: [
     HeroComponent,
-    ScopeServiceComponent
+    ScopeServiceComponent,
+    ButtonLinkComponent
   ],
   templateUrl: './drone-services.component.html',
   styleUrl: './drone-services.component.sass'

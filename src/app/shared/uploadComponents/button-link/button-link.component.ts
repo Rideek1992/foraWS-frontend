@@ -14,5 +14,6 @@ export class ButtonLinkComponent {
   @Input() color?: string;
   @Input() icon?: string;
   @Input() type?: string;
+  @Input() fragment?: string;
 
 }

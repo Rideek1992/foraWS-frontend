@@ -1,5 +1,8 @@
 <h2>{{dataHero.title}}</h2>
-<div class="photoElementHero" [ngStyle]="{backgroundImage: 'url(' + photosURS + ')'}"></div>
+<!--<div class="photoElementHero" [ngStyle]="{backgroundImage: 'url(' + photosURS + ')'}"></div>-->
+<div class="photoElementHero">
+  <img [src]="photosURS" loading="lazy" [alt]="'zdjecie' +dataHero.title">
+</div>
 <div class="contentElementHero">
   <markdown [data]="dataHero.description_text"></markdown>
   <div class="buttonElementHero">

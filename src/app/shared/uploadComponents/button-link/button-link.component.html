@@ -1,3 +1,8 @@
 <div class="buttonLinkElement">
-  <a href="{{link}}">{{name}}</a>
+  @if(!fragment){
+    <a [href]="link">{{name}}</a>
+  }
+  @if(fragment){
+    <a class="{{fragment==='form'?'':'fragmetnElement'}}" [href]="link + '#' + fragment">{{name}}</a>
+  }
 </div>

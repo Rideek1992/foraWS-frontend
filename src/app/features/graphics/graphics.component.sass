@@ -242,11 +242,20 @@ $colorFourthBox: #fbda9d
           color: c.$mainColor
 
 
+    //.photoElement
+    //  background-image: url('https://admin.fora-poligrafia.pl/uploads/photo_company_1_98165532bd.webp')
+    //  background-size: cover
+    //  background-position: center
+    //  border-radius: 2rem
     .photoElement
-      background-image: url('https://admin.fora-poligrafia.pl/uploads/photo_company_1_98165532bd.webp')
-      background-size: cover
-      background-position: center
-      border-radius: 2rem
+      position: relative
+
+      img
+        position: absolute
+        width: 100%
+        height: 100%
+        object-fit: cover
+        border-radius: 2rem
 
 
 .CTASection
@@ -269,3 +278,8 @@ $colorFourthBox: #fbda9d
   app-button-link
     justify-self: center
 
+
+
+::ng-deep app-button-link
+  grid-column: 1 / -1
+  justify-self: center

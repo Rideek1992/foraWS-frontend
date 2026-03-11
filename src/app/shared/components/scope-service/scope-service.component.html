@@ -1,6 +1,9 @@
 <div class="containerScopeService" [class.reverse]="isReverse">
   @if(data.photo != null){
-  <div class="photoScopeService" [ngStyle]="{ 'background-image': 'url(' + adressURL + data.photo[0].url + ')' }"></div>}
+<!--  <div class="photoScopeService" [ngStyle]="{ 'background-image': 'url(' + adressURL + data.photo[0].url + ')' }"></div>}-->
+    <div class="photoScopeService">
+    <img loading="lazy" [src]="adressURL+data.photo[0].url" [alt]="'zdjecie' +data.title">
+  </div>}
   <div class="contentScopeService">
     <h4>
       {{data.scope_service}}

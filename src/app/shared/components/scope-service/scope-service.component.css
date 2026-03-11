@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "c": expected expression (e.g. 1px, bold), was ".$fontSizeMediu..."
-        on line 33 of scope-service.component.sass
+        on line 41 of scope-service.component.sass
 
-28:   grid-template-columns: 1fr
-29:   grid-gap: 2rem
-30: 
-31: 
-32:   h4
-33:     font-size: c.$fontSizeMediumText
-34:     font-weight: 300
-35: 
-36:   p
-37:     font-size: c.$fontSizeSmallText
-38:     font-weight: 100
+36:   grid-template-columns: 1fr
+37:   grid-gap: 2rem
+38: 
+39: 
+40:   h4
+41:     font-size: c.$fontSizeMediumText
+42:     font-weight: 300
+43: 
+44:   p
+45:     font-size: c.$fontSizeSmallText
+46:     font-weight: 100
 
 Backtrace:
-scope-service.component.sass:33
+scope-service.component.sass:41
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
 /Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
@@ -56,4 +56,4 @@ scope-service.component.sass:33
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontSizeMediu...\"\A         on line 33 of scope-service.component.sass\A \A 28:   grid-template-columns: 1fr\A 29:   grid-gap: 2rem\A 30: \A 31: \A 32:   h4\A 33:     font-size: c.$fontSizeMediumText\A 34:     font-weight: 300\A 35: \A 36:   p\A 37:     font-size: c.$fontSizeSmallText\A 38:     font-weight: 100"; }
+  content: "Error: Invalid CSS after \"c\": expected expression (e.g. 1px, bold), was \".$fontSizeMediu...\"\A         on line 41 of scope-service.component.sass\A \A 36:   grid-template-columns: 1fr\A 37:   grid-gap: 2rem\A 38: \A 39: \A 40:   h4\A 41:     font-size: c.$fontSizeMediumText\A 42:     font-weight: 300\A 43: \A 44:   p\A 45:     font-size: c.$fontSizeSmallText\A 46:     font-weight: 100"; }

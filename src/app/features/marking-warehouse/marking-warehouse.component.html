@@ -4,42 +4,52 @@
   <div class="descriptionElement">
     <p>W środowisku magazynowym oznakowanie nie pełni wyłącznie funkcji informacyjnej.
       Jest elementem organizacji procesów operacyjnych i bezpieczeństwa pracy.</p>
-    <p>Projektujemy systemy oznaczeń w oparciu o analizę infrastruktury, przepływów towarowych i realnych potrzeb operacyjnych.</p>
+    <p>Projektujemy systemy oznaczeń w oparciu o analizę infrastruktury, przepływów
+      towarowych i realnych potrzeb operacyjnych.</p>
   </div>
   <div class="listApproach">
     <h4>Dobrze zaprojektowane oznakowanie</h4>
     <ul>
       <li>
         <i class="fa-sharp fa-light fa-location-crosshairs"></i>
-        minimalizuje błędy lokalizacyjne</li>
+        minimalizuje błędy lokalizacyjne
+      </li>
       <li>
         <i class="fa-sharp fa-light fa-stopwatch"></i>
-        skraca czas operacji</li>
+        skraca czas operacji
+      </li>
       <li>
         <i class="fa-sharp fa-light fa-shield-check"></i>
-        zwiększa bezpieczeństwo</li>
+        zwiększa bezpieczeństwo
+      </li>
       <li>
         <i class="fa-sharp fa-light fa-diagram-project"></i>
-        porządkuje strukturę przestrzeni</li>
+        porządkuje strukturę przestrzeni
+      </li>
       <li>
         <i class="fa-light fa-chalkboard-user"></i>
-        ułatwia wdrażanie nowych pracowników</li>
+        ułatwia wdrażanie nowych pracowników
+      </li>
     </ul>
   </div>
   <div class="scopeOfServiceElement">
     <h4>Zakres usług</h4>
-    @for (data of dataElements; track data.id; let i = $index){
+    @for (data of dataElements; track data.id; let i = $index) {
       <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
     }
   </div>
+  <app-button-link link="contact" fragment="wspolpraca"
+                   name="jak wyglada wspólpraca"></app-button-link>
   <div class="benefitsSection">
     <h3>Realne korzyści operacyjne</h3>
     <h6>Oznakowanie jako element efektywności operacyjnej</h6>
-    <p>W środowisku magazynowym dobrze zaprojektowany system oznaczeń wpływa bezpośrednio na tempo pracy, poziom błędów oraz bezpieczeństwo operacyjne.
-      Poniżej przedstawiono kluczowe obszary, w których system oznakowania realnie wspiera funkcjonowanie magazynu.</p>
+    <p>W środowisku magazynowym dobrze zaprojektowany system oznaczeń wpływa bezpośrednio
+      na tempo pracy, poziom błędów oraz bezpieczeństwo operacyjne.
+      Poniżej przedstawiono kluczowe obszary, w których system oznakowania realnie wspiera
+      funkcjonowanie magazynu.</p>
     <div class="benefitsList">
-      @for(data of benefitnsList; track $index; let index = $index ){
-        <app-benefit-list [index]="index" [dataBenefits]="data" ></app-benefit-list>
+      @for (data of benefitnsList; track $index; let index = $index) {
+        <app-benefit-list [index]="index" [dataBenefits]="data"></app-benefit-list>
       }
 
 
@@ -48,13 +58,15 @@
   <div class="forWhoSection">
     <h3>Dla kogo jest ta usługa</h3>
     <h6>Dla jakich organizacji projektujemy systemy oznaczeń</h6>
-    <p>Wspieramy firmy, w których oznakowanie magazynu wpływa bezpośrednio na efektywność operacyjną, bezpieczeństwo pracy oraz jakość realizowanych procesów logistycznych.</p>
+    <p>Wspieramy firmy, w których oznakowanie magazynu wpływa bezpośrednio na efektywność
+      operacyjną, bezpieczeństwo pracy oraz jakość realizowanych procesów
+      logistycznych.</p>
     <div class="forWhooElements">
-      @for (element of dataForWho; track $index; let index =  $index) {
+      @for (element of dataForWho; track $index; let index = $index) {
         <div class="elementForWhoo">
           <i class="{{element.icon_fa}}"></i>
-          <h6>{{element.title}}</h6>
-          <p>{{element.description}}</p>
+          <h6>{{ element.title }}</h6>
+          <p>{{ element.description }}</p>
         </div>
       }
     </div>
@@ -67,26 +79,33 @@
       My projektujemy je jako część systemu operacyjnego magazynu.
     </p>
     <p>
-      Łączymy doświadczenie logistyczne z projektowaniem systemów identyfikacji przestrzeni magazynowej, dzięki czemu oznaczenia wspierają rzeczywiste procesy operacyjne.
+      Łączymy doświadczenie logistyczne z projektowaniem systemów identyfikacji
+      przestrzeni magazynowej, dzięki czemu oznaczenia wspierają rzeczywiste procesy
+      operacyjne.
     </p>
     <div class="whyWeElements">
-      @for (element of dataWhyWe; track $index ; let i = $index) {
+      @for (element of dataWhyWe; track $index; let i = $index) {
         <div class="elemetnWyWe">
           <h6>{{ element.title }}</h6>
-          <p class="left">{{element.first_paragraph}}</p>
+          <p class="left">{{ element.first_paragraph }}</p>
           <div class="separator"></div>
-          <p class="right">{{element.second_paragraph}}</p>
+          <p class="right">{{ element.second_paragraph }}</p>
         </div>
       }
     </div>
-    <p>Fora Warehouse System łączy doświadczenie logistyczne z projektowaniem systemów oznaczeń, które realnie wspierają funkcjonowanie magazynów i obiektów przemysłowych.</p>
+    <p>Fora Warehouse System łączy doświadczenie logistyczne z projektowaniem systemów
+      oznaczeń, które realnie wspierają funkcjonowanie magazynów i obiektów
+      przemysłowych.</p>
   </div>
   <div class="CTASection">
     <h3>Porozmawiajmy o oznakowaniu Twojego magazynu</h3>
-    <p>Jeśli planujesz wdrożenie systemu oznaczeń w magazynie lub chcesz uporządkować istniejącą infrastrukturę oznaczeń, możemy przygotować projekt dopasowany do specyfiki Twojego obiektu i procesów operacyjnych.
+    <p>Jeśli planujesz wdrożenie systemu oznaczeń w magazynie lub chcesz uporządkować
+      istniejącą infrastrukturę oznaczeń, możemy przygotować projekt dopasowany do
+      specyfiki Twojego obiektu i procesów operacyjnych.
     </p>
-    <p>Każdy projekt rozpoczynamy od analizy infrastruktury magazynowej oraz sposobu funkcjonowania procesów logistycznych w organizacji.
+    <p>Każdy projekt rozpoczynamy od analizy infrastruktury magazynowej oraz sposobu
+      funkcjonowania procesów logistycznych w organizacji.
     </p>
-    <app-button-link name="umów konsultacje" link="contact"></app-button-link>
+    <app-button-link name="umów konsultacje" link="contact" fragment="form"></app-button-link>
   </div>
 </div>

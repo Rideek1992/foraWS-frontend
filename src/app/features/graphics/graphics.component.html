@@ -35,6 +35,7 @@
     <app-scope-service pageName="graphic" [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
   }
 </div>
+<app-button-link link="contact" fragment="wspolpraca" name="jak wyglada wspólpraca"></app-button-link>
 <div class="imageInformationSection">
   <h2>Wizerunek jako element przewagi konkurencyjnej</h2>
   <p>W sektorze B2B komunikacja wizualna wpływa bezpośrednio na sposób postrzegania kompetencji, skali działania i stabilności organizacji.</p>
@@ -64,7 +65,11 @@
       <li>centrami dystrybucyjnymi</li>
       <li>firmami zarządzającymi magazynami</li>
     </ul>
-    <div class="photoElement"></div>
+<!--    <div class="photoElement"></div>-->
+    <div class="photoElement">
+      <img loading="lazy"
+        src="https://admin.fora-poligrafia.pl/uploads/photo_company_1_98165532bd.webp" alt="grafika">
+    </div>
   </div>
   <p>Niezależnie od skali działalności — projektujemy rozwiązania dopasowane do struktury
                i celów biznesowych firmy.</p>
@@ -74,5 +79,5 @@
   <p>Profesjonalnie zaprojektowana identyfikacja wizualna i materiały sprzedażowe wspierają rozwój firmy na każdym etapie jej działania.
   </p>
   <p>Jeśli chcesz uporządkować komunikację swojej organizacji i wzmocnić jej pozycję rynkową — zapraszamy do kontaktu.</p>
-  <app-button-link link="contact" name="skontaktuj się"></app-button-link>
+  <app-button-link link="contact" fragment="form" name="skontaktuj się"></app-button-link>
 </div>
