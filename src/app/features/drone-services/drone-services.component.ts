@@ -26,6 +26,7 @@ export class DroneServicesComponent implements OnInit{
 
   dataDrone:any =[]
   droneApplicationArea:any =[]
+  droneWhyWe:any =[]
 
   ngOnInit() {
     this.api.getGraphicElements('drone-services').subscribe({
@@ -44,6 +45,15 @@ export class DroneServicesComponent implements OnInit{
         error: (err.error.message)
       }
     })
+    this.api.getSiteMarkingWarehouse('drone_why_we').subscribe({
+      next: (data) =>{
+        this.droneWhyWe = data.data.map((item:any) => item.drone_why_we)
+      },
+      error: (err) =>{
+        console.log(err.error.message)
+      }
+      }
+    )
   }
 
 }

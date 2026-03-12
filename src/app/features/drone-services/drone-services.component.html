@@ -2,23 +2,35 @@
 <div class="whyDronInspection">
   <h2>Dlaczego inspekcje dronowe?</h2>
   <h6>Szybsza, bezpieczniejsza i dokładniejsza ocena obiektów</h6>
-  <p>Inspekcje dronowe pozwalają sprawnie sprawdzić dachy, elewacje, instalacje oraz inne trudno dostępne miejsca bez potrzeby angażowania rusztowań, podnośników i dodatkowych ekip technicznych. To nowoczesne rozwiązanie dla firm, które chcą szybciej identyfikować problemy, ograniczać ryzyko i podejmować lepsze decyzje na podstawie realnych danych wizualnych.</p>
+  <p>Inspekcje dronowe pozwalają sprawnie sprawdzić dachy, elewacje, instalacje oraz inne
+    trudno dostępne miejsca bez potrzeby angażowania rusztowań, podnośników i dodatkowych
+    ekip technicznych. To nowoczesne rozwiązanie dla firm, które chcą szybciej
+    identyfikować problemy, ograniczać ryzyko i podejmować lepsze decyzje na podstawie
+    realnych danych wizualnych.</p>
   <div class="boxDronInspection">
     <div class="elementDrone droneFirst">
       <h6>Bezpieczny dostęp do trudnych miejsc</h6>
-      <p>Dron umożliwia kontrolę stref, do których dostęp tradycyjnymi metodami jest utrudniony, kosztowny lub ryzykowny. Dzięki temu można ocenić stan obiektu bez narażania ludzi i bez zbędnych komplikacji organizacyjnych.</p>
+      <p>Dron umożliwia kontrolę stref, do których dostęp tradycyjnymi metodami jest
+        utrudniony, kosztowny lub ryzykowny. Dzięki temu można ocenić stan obiektu bez
+        narażania ludzi i bez zbędnych komplikacji organizacyjnych.</p>
     </div>
     <div class="elementDrone droneSecond">
       <h6>Szybka dokumentacja foto i wideo</h6>
-      <p>W krótkim czasie pozyskujemy wysokiej jakości materiał wizualny, który pozwala dokładnie przeanalizować stan dachu, elewacji, infrastruktury lub terenu wokół obiektu. To wygodna baza do dalszych działań technicznych i operacyjnych.</p>
+      <p>W krótkim czasie pozyskujemy wysokiej jakości materiał wizualny, który pozwala
+        dokładnie przeanalizować stan dachu, elewacji, infrastruktury lub terenu wokół
+        obiektu. To wygodna baza do dalszych działań technicznych i operacyjnych.</p>
     </div>
     <div class="elementDrone droneThird">
       <h6>Mniej przestojów i niższe koszty</h6>
-      <p>Inspekcja dronowa ogranicza potrzebę stosowania kosztownych metod tradycyjnych i minimalizuje wpływ prac kontrolnych na bieżące funkcjonowanie obiektu. To szybszy proces i lepsze wykorzystanie czasu.</p>
+      <p>Inspekcja dronowa ogranicza potrzebę stosowania kosztownych metod tradycyjnych i
+        minimalizuje wpływ prac kontrolnych na bieżące funkcjonowanie obiektu. To szybszy
+        proces i lepsze wykorzystanie czasu.</p>
     </div>
     <div class="elementDrone droneFourth">
       <h6>Lepsza podstawa do decyzji</h6>
-      <p>Zdjęcia i nagrania z lotu dają pełniejszy obraz sytuacji niż ocena wykonywana z ziemi. Dzięki temu łatwiej planować naprawy, prace serwisowe, działania inwestycyjne i kolejne etapy obsługi obiektu.</p>
+      <p>Zdjęcia i nagrania z lotu dają pełniejszy obraz sytuacji niż ocena wykonywana z
+        ziemi. Dzięki temu łatwiej planować naprawy, prace serwisowe, działania
+        inwestycyjne i kolejne etapy obsługi obiektu.</p>
     </div>
   </div>
 </div>
@@ -30,20 +42,58 @@
     }
   </div>
 </div>
-<app-button-link link="contact" fragment="wspolpraca" name="jak wyglada wspólpraca"></app-button-link>
+<app-button-link fragment="wspolpraca" link="contact"
+                 name="jak wyglada wspólpraca"></app-button-link>
 <div class="droneAplicationAreaSection">
   <h4>Przykłady zastosowań</h4>
   <p>
-    Usługi dronowe znajdują zastosowanie wszędzie tam, gdzie liczy się szybka ocena obiektu, dobra widoczność trudno dostępnych miejsc oraz czytelna dokumentacja wizualna. To rozwiązanie, które sprawdza się zarówno w bieżącej kontroli obiektów, jak i w działaniach inwestycyjnych, technicznych oraz promocyjnych.
+    Usługi dronowe znajdują zastosowanie wszędzie tam, gdzie liczy się szybka ocena
+    obiektu, dobra widoczność trudno dostępnych miejsc oraz czytelna dokumentacja
+    wizualna. To rozwiązanie, które sprawdza się zarówno w bieżącej kontroli obiektów, jak
+    i w działaniach inwestycyjnych, technicznych oraz promocyjnych.
   </p>
   <div class="droneAplicationAreaElements">
     @for (item of droneApplicationArea; track $index) {
       <div class="elementDrone">
         <i [class]="item.icon"></i>
-        <h6>{{item.title}}</h6>
-        <p>{{item.description}}</p>
+        <h6>{{ item.title }}</h6>
+        <p>{{ item.description }}</p>
       </div>
     }
+  </div>
+  <div class="droneWhyWeSection">
+    <h4>
+      Dlaczego warto z nami współpracować
+    </h4>
+    <div class="sectionLeft">
+      <p>W usługach dronowych stawiamy nie tylko na jakość ujęć, ale przede wszystkim na
+        ich praktyczne zastosowanie. Zależy nam na tym, aby materiał z lotu wspierał
+        realną ocenę obiektu, dokumentację działań i podejmowanie kolejnych decyzji.</p>
+      <p>Łączymy nowoczesne narzędzia z podejściem opartym na zrozumieniu obiektów
+        przemysłowych, magazynowych i technicznych.</p>
+    </div>
+    <div class="sectionRight">
+      @for (item of droneWhyWe; track $index; let i = $index) {
+        <div class="whyWeElement">
+          <i class="fa-sharp fa-light fa-drone"></i>
+          <h6>{{ item.title }}</h6>
+          <p>{{ item.description }}</p>
+        </div>
+      }
+    </div>
+
+  </div>
+  <div class="CTASectionDrone">
+
+    <h3>
+      Zobacz swój obiekt z lepszej perspektywy
+    </h3>
+    <img
+      src="https://admin.fora-poligrafia.pl/uploads/warehouse_Object_6295cb5b30.webp"
+      alt="Zdjecie z drona obiektu magazynowego">
+    <p>Wykorzystaj drony do dokumentacji, oceny trudno dostępnych miejsc i materiałów wspierających dalsze decyzje. Napisz do nas i sprawdź, jak możemy pomóc.</p>
+    <app-button-link link="contact" fragment="form"
+                     name="zapytaj o wycene"></app-button-link>
   </div>
 
 </div>
