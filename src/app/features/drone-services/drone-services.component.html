@@ -25,9 +25,25 @@
 <div class="scopeDroneSection">
   <h4>Zakres usług</h4>
   <div class="scopeElementDrone">
-    @for (data of dataDrone; track $index; let i = $index){
+    @for (data of dataDrone; track $index; let i = $index) {
       <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
     }
   </div>
 </div>
 <app-button-link link="contact" fragment="wspolpraca" name="jak wyglada wspólpraca"></app-button-link>
+<div class="droneAplicationAreaSection">
+  <h4>Przykłady zastosowań</h4>
+  <p>
+    Usługi dronowe znajdują zastosowanie wszędzie tam, gdzie liczy się szybka ocena obiektu, dobra widoczność trudno dostępnych miejsc oraz czytelna dokumentacja wizualna. To rozwiązanie, które sprawdza się zarówno w bieżącej kontroli obiektów, jak i w działaniach inwestycyjnych, technicznych oraz promocyjnych.
+  </p>
+  <div class="droneAplicationAreaElements">
+    @for (item of droneApplicationArea; track $index) {
+      <div class="elementDrone">
+        <i [class]="item.icon"></i>
+        <h6>{{item.title}}</h6>
+        <p>{{item.description}}</p>
+      </div>
+    }
+  </div>
+
+</div>
