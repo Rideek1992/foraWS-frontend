@@ -1,1 +1,46 @@
-<p>data-analysis works!</p>
+<app-hero></app-hero>
+<div class="dataAnaliticSection">
+  <h2>Dlaczego analiza danych?</h2>
+  <div class="contentAnalitic">
+    <h4>Lepszy wgląd w procesy, koszty i realne możliwości rozwoju</h4>
+    <p>Analiza danych pozwala zobaczyć więcej niż pojedyncze liczby w tabeli. Pomaga
+      zrozumieć, które procesy działają sprawnie, gdzie pojawiają się straty, co wpływa na
+      wydajność i które decyzje naprawdę poprawiają funkcjonowanie firmy. To praktyczne
+      wsparcie dla biznesu, logistyki, operacji i sprzedaży.</p>
+  </div>
+  <div class="analiticElements">
+    <div class="analiticItem first">
+      <i class="fa-sharp fa-light fa-magnifying-glass-chart"></i>
+      <h4>Szybsze wykrywanie problemów</h4>
+      <p>Dobrze przygotowana analiza pomaga zauważyć nieefektywności, powtarzające się
+        błędy i obszary wymagające poprawy, zanim zaczną generować większe koszty lub
+        wpływać na jakość pracy.</p>
+    </div>
+    <div class="analiticItem second">
+      <i class="fa-sharp fa-light fa-sliders"></i>
+      <h4>Lepsza kontrola nad procesami</h4>
+      <p>Dane pokazują, jak naprawdę działa organizacja. Dzięki temu łatwiej ocenić wydajność operacji, porównać wyniki i zidentyfikować miejsca, które wymagają usprawnienia.</p>
+    </div>
+    <div class="analiticItem third">
+      <i class="fa-sharp fa-light fa-bullseye"></i>
+      <h4>Trafniejsze decyzje biznesowe</h4>
+      <p>Czytelne raporty i dashboardy porządkują informacje i ułatwiają podejmowanie decyzji opartych na faktach, a nie wyłącznie na intuicji czy rozproszonych danych z różnych źródeł.</p>
+    </div>
+    <div class="analiticItem fourth">
+      <i class="fa-sharp fa-light fa-chart-column"></i>
+      <h4>Większa przejrzystość i rozwój</h4>
+      <p>Analiza danych wspiera planowanie, prognozowanie i rozwój firmy. Ułatwia ocenę efektów działań, monitorowanie zmian i budowanie bardziej uporządkowanego modelu zarządzania.</p>
+    </div>
+  </div>
+  <p>Dane stają się wartościowe dopiero wtedy, gdy pomagają lepiej rozumieć firmę i
+    podejmować właściwe decyzje.</p>
+</div>
+<div class="scopeAnaliticSection">
+  <h4>Zakres usług</h4>
+  <div class="elementsScope">
+    @for (data of dataAnalitictScopec; track $index; let i = $index) {
+      <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
+    }
+  </div>
+
+</div>
