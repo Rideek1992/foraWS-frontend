@@ -25,9 +25,6 @@ export class AppComponent  implements OnInit{
   ngOnInit() {
     this.seoRouteListener.init();
     this.hostname = window.location.hostname
-
-    console.log(this.hostname)
-    console.log(this.statusMode)
   }
 
 }
