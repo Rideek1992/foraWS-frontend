@@ -27,6 +27,7 @@ export class AppComponent  implements OnInit{
     this.hostname = window.location.hostname
 
     console.log(this.hostname)
+    console.log(this.statusMode)
   }
 
 }
