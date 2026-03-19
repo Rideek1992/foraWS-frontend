@@ -1,0 +1,200 @@
+@use 'styles' as c
+
+$bgcItemWeb: #fbfbfb
+$borderItemWeb: #0f316c
+$iconItemWeb: #152033
+
+
+
+@keyframes sliderFromRight
+  0%
+    opacity: 0
+    transform: translateX(150%)
+  100%
+    opacity: 1
+    transform: translateX(0)
+
+
+
+:host
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+
+
+.whatWeDoSectionWebService
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  margin: 0 0 2rem 0
+
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+
+.elementsSectionWebService
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 2rem
+  overflow-x: hidden
+
+  .itemWebService
+    display: grid
+    grid-template-rows: c.$fontSizeBigText  repeat(2, auto)
+    grid-gap: 1rem
+    justify-content: center
+    align-items: center
+    padding: 2rem
+    border-radius: 2rem
+    background-color: $bgcItemWeb
+    border: 1px solid $borderItemWeb
+    position: relative
+    opacity: 0
+
+
+    i
+      grid-row: 1 / span 1
+      font-size: c.$fontSizeBigText
+      align-self: center
+      justify-self: center
+      color: $borderItemWeb
+
+
+    h4
+      grid-row: 2 / span 1
+      font-size: c.$fontSizeMediumText * 0.8
+      text-align: center
+      font-weight: 300
+
+
+    p
+      grid-row: 3 / span 1
+      font-size: c.$fontSizeSmallText * 0.9
+      text-align: center
+      padding: 0 2rem
+
+  & .show
+    animation: sliderFromRight 0.7s ease-out forwards
+
+  & .show:nth-child(1)
+    animation-delay: 0s
+
+  & .show:nth-child(2)
+    animation-delay: 0.15s
+
+  & .show:nth-child(3)
+    animation-delay: 0.3s
+
+
+
+.scopeWebServiceSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  margin: 2rem 0
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+.elementsScopeWeb
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 5rem
+
+
+
+
+.WhyWebServiceSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  margin: 2rem 0
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+  p
+    font-size: c.$fontSizeMediumText
+    font-weight: 100
+
+
+  .elementsWhyWebService
+    display: grid
+    grid-template-columns: 1.5fr 1fr
+
+    .elementsChose
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 2rem
+
+
+    .itemWhyWeb
+      display: flex
+      flex-direction: row
+      gap: 2rem
+      justify-content: start
+      align-items: center
+      cursor: pointer
+
+      i
+        font-size: c.$fontSizeBigText
+
+      h4
+        font-size: c.$fontSizeBigText * 0.7
+        font-weight: 300
+
+
+      &.active
+        color: c.$mainColor
+        position: relative
+
+        &::after
+          content: '\f101'
+          font-family: 'Font Awesome 7 Pro'
+          font-size: c.$fontSizeMediumText
+          position: absolute
+          right: 2rem
+          color: darken(c.$mainColor, 15%)
+
+    .elementDescription
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding: 1rem 2rem
+      outline: c.$fontColorLight 1px solid
+      border-radius: 2rem
+      background-color: lighten(c.$fontColorLight, 12%)
+      box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2)
+
+      p
+        font-size: c.$fontSizeSmallText
+
+
+.CTAWebServiceSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  margin: 2rem 0
+
+  h4
+    font-size: c.$fontSizeBigText
+    font-weight: 300
+    text-align: center
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+
+  ::ng-deep app-button-link
+    justify-self: center

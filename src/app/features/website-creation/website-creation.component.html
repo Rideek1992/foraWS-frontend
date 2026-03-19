@@ -1,1 +1,64 @@
-<p>website-creation works!</p>
+<app-hero></app-hero>
+<div class="whatWeDoSectionWebService">
+  <h2>
+    Tworzymy rozwiązania dopasowane do realnych potrzeb firm
+  </h2>
+  <p>Od prostych stron ofertowych po bardziej zaawansowane panele i narzędzia webowe — projektujemy rozwiązania, które wspierają komunikację, organizację pracy i rozwój biznesu.</p>
+  <div class="elementsSectionWebService" #observeSection>
+    <div class="itemWebService" [class.show]="sectionVisible">
+      <i class="fa-sharp fa-light fa-globe-pointer"></i>
+      <h4>Strony firmowe</h4>
+      <p>Nowoczesne strony firmowe, landing page i podstrony usługowe, które pomagają budować profesjonalny wizerunek marki, jasno prezentować ofertę i skutecznie wspierać działania sprzedażowe.
+      </p>
+    </div>
+    <div class="itemWebService" [class.show]="sectionVisible">
+      <i class="fa-sharp fa-light fa-layer-group"></i>
+      <h4>Panele i systemy</h4>
+      <p>Przejrzyste narzędzia do zarządzania informacją, dokumentami, zgłoszeniami i procesami wewnętrznymi — projektowane tak, aby ułatwiać codzienną pracę zespołu i porządkować przepływ danych.
+      </p>
+    </div>
+    <div class="itemWebService" [class.show]="sectionVisible">
+      <i class="fa-sharp fa-light fa-puzzle-piece"></i>
+      <h4>Aplikacje dedykowane</h4>
+      <p>Aplikacje i narzędzia tworzone pod konkretny proces, model działania lub specyfikę firmy — rozwijane w oparciu o realne potrzeby biznesowe i możliwość dalszej rozbudowy.</p>
+    </div>
+  </div>
+</div>
+<div class="scopeWebServiceSection">
+  <h4>Zakres Usług</h4>
+  <div class="elementsScopeWeb">
+    @for (item of dataScopeWeb; track item.id; let i = $index) {
+      <app-scope-service [data]="item" [isReverse]="i % 2 === 0"></app-scope-service>
+    }
+  </div>
+</div>
+<div class="WhyWebServiceSection">
+  <h2>Dlaczego tworzone przez nas rozwiązania realnie wspierają firmę</h2>
+  <p>
+    Dobre rozwiązanie webowe nie kończy się na estetyce. Powinno porządkować informacje, wspierać codzienną pracę i rozwijać się razem z potrzebami firmy.
+  </p>
+  <div class="elementsWhyWebService">
+    <div class="elementsChose">
+      @for(item of dataWhyElement; track $index; let i = $index) {
+        <div (click)="getElementNubrer(i)"  class="itemWhyWeb" [class.active]="activeElement === i">
+          <i [class]="item.icon"></i>
+          <h4>{{item.title}}</h4>
+        </div>
+      }
+    </div>
+    <div class="elementDescription">
+    @for(item of dataWhyElement; track $index; let i = $index) {
+      @if (i === activeElement) {
+        <p>{{item.description}}</p>
+      }
+    }
+    </div>
+  </div>
+</div>
+<div class="CTAWebServiceSection">
+  <h4>
+    Masz pomysł na stronę, panel lub narzędzie webowe dla swojej firmy?
+  </h4>
+  <p>Porozmawiajmy o rozwiązaniu, które będzie nie tylko estetyczne, ale przede wszystkim użyteczne, czytelne i dopasowane do realnych potrzeb Twojego biznesu.</p>
+  <app-button-link fragment="form" link="contact" name="porozmawiajmy o projekcie"></app-button-link>
+</div>

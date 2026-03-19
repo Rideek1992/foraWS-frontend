@@ -96,7 +96,14 @@ export const routes: Routes = [
   },
 
   {path: 'privacy-policy', component: PrivacyPolicyComponent},
-  {path: 'data-analytics', component: DataAnalysisComponent},
-  {path: 'website-creation', component: WebsiteCreationComponent},
+  {path: 'data-analytics', component: DataAnalysisComponent, data: { seo: {
+        title: 'Analiza danych dla firm | Dashboardy, KPI, raporty i automatyzacja | FORA',
+        description: 'Wspieramy firmy w analizie danych, tworzeniu dashboardów, raportów KPI i automatyzacji pracy z danymi. Pomagamy porządkować informacje, lepiej rozumieć procesy i podejmować trafniejsze decyzje biznesowe.',
+        keywords: 'analiza danych dla firm, analiza danych, dashboardy biznesowe, dashboardy KPI,' +
+          ' raporty dla firm, raportowanie danych, automatyzacja raportowania, analiza procesów, analiza biznesowa, analiza danych logistycznych, analiza danych magazynowych, KPI dla firm, Power BI, Excel analiza danych, SQL analiza danych, Python analiza danych',
+        canonical: 'https://fora-ws.pl/data-analytics',
+        robots: 'index,follow'
+      }}},
+  {path: 'web-service', component: WebsiteCreationComponent},
   {path: '**', redirectTo: ''},
 ];
