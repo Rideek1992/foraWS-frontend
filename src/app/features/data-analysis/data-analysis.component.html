@@ -40,7 +40,29 @@
   <div class="elementsScope">
     @for (data of dataAnalitictScopec; track $index; let i = $index) {
       <app-scope-service [data]="data" [isReverse]="i % 2 === 0"></app-scope-service>
+    }</div>
+  <app-button-link fragment="wspolpraca" link="contact" name="jak wyglada współpraca"></app-button-link>
+</div>
+<div class="analiticsWhyWeSection">
+  <h2>Dlaczego warto pracować z nami</h2>
+  <h4>Łączymy analizę danych z rozumieniem procesów, operacji i realnych potrzeb firmy</h4>
+  <p>Dobra analiza danych nie powinna kończyć się na wykresach i tabelach. Jej wartość pojawia się wtedy, gdy pomaga lepiej rozumieć procesy, szybciej zauważać problemy i podejmować trafniejsze decyzje. W Fora Warehouse System stawiamy na rozwiązania, które są czytelne, praktyczne i dopasowane do sposobu działania firmy.
+  </p>
+  <div class="elementsAnaliticWhyWe">
+    @for (item of  dataAnaliticsWhyWe; track item.id; let i = $index) {
+      <div class="itemAnaliticWhyWe element-{{$index + 1}}">
+        <i [class]="item.icon"></i>
+        <h4>{{item.title}}</h4>
+        <p>{{item.description}}</p>
+      </div>
+
     }
   </div>
-
+</div>
+<div class="CTAAnaliticSection">
+  <h2>Dane mają największą wartość wtedy, gdy wspierają działanie</h2>
+  <img
+    src="https://admin.fora-poligrafia.pl/uploads/dane_CTA_Analiza_Danych_87ddfcfc14.webp" alt="zdjęcie CTA">
+  <p>Tworzymy rozwiązania analityczne, które pomagają lepiej rozumieć procesy, szybciej reagować na zmiany i podejmować trafniejsze decyzje. Jeśli chcesz sprawdzić, jak możemy wesprzeć Twoją firmę, zapraszamy do kontaktu.</p>
+  <app-button-link fragment="form" link="contact" name="umów rozmowę"></app-button-link>
 </div>

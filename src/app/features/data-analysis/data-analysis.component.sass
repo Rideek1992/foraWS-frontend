@@ -125,3 +125,114 @@ $darkenPercent: 30%
     display: grid
     grid-template-columns: 1fr
     grid-gap: 3rem
+
+::ng-deep app-button-link
+  grid-column: 1 / -1
+  justify-self: center
+
+
+.analiticsWhyWeSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 400
+    text-align: center
+
+  h4
+    font-size: c.$fontSizeMediumText
+    font-weight: 300
+    text-align: center
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+
+
+.elementsAnaliticWhyWe
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 3rem
+
+
+  .itemAnaliticWhyWe
+    display: grid
+    grid-template-columns: 4rem 1fr
+    grid-gap: 1rem
+    padding: 2rem
+    outline: 1px solid #282828C7
+    outline-offset: 0.4rem
+    border-radius: 2rem
+
+
+    i
+      font-size: 3rem
+      justify-self: center
+      align-self: center
+
+    p
+      grid-column: 1 / -1
+      grid-row: 2 / span 1
+      font-size: c.$fontSizeSmallText * 0.85
+
+    h4
+      justify-self: start
+      align-self: center
+
+      text-align: start
+      font-size: c.$fontSizeSmallText * 1.1
+
+
+  .element-1
+    background-color: $box-1
+    outline-color: darken($box-1,$darkenPercent)
+    & > i
+      color: darken($box-1,$darkenPercent)
+
+  .element-2
+    background-color: $box-2
+    outline-color: darken($box-2,$darkenPercent)
+    & > i
+      color: darken($box-2,$darkenPercent)
+
+  .element-3
+    background-color: $box-3
+    outline-color: darken($box-3,$darkenPercent)
+    & > i
+      color: darken($box-3,$darkenPercent)
+
+  .element-4
+    background-color: $box-4
+    outline-color: darken($box-4,$darkenPercent)
+    & > i
+      color: darken($box-4,$darkenPercent)
+
+
+
+.CTAAnaliticSection
+  display: grid
+  grid-template-columns: 1fr
+  grid-gap: 3rem
+  margin: 3rem 0
+
+  img
+    width: 100%
+    height: 15rem
+    object-fit: cover
+    border-radius: 2rem
+    box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.2)
+
+  h2
+    font-size: c.$fontSizeBigText
+    font-weight: 400
+    text-align: center
+
+  p
+    font-size: c.$fontSizeSmallText
+    font-weight: 100
+
+  &::ng-deep app-button-link
+    grid-column: 1 / -1
+    justify-self: center
