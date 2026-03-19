@@ -104,6 +104,12 @@ export const routes: Routes = [
         canonical: 'https://fora-ws.pl/data-analytics',
         robots: 'index,follow'
       }}},
-  {path: 'web-service', component: WebsiteCreationComponent},
+  {path: 'web-service', component: WebsiteCreationComponent, data: {seo :{
+        title: 'Rozwiązania webowe dla firm | Strony, panele i aplikacje webowe | FORA',
+        description: 'Tworzymy rozwiązania webowe dla firm: strony internetowe, panele wewnętrzne i aplikacje wspierające procesy biznesowe. Estetyczne, funkcjonalne i dopasowane do realnych potrzeb.',
+        keywords: 'rozwiązania webowe dla firm, strony i aplikacje webowe, panele dla firm, narzędzia webowe dla biznesu, strony www dla firm, aplikacje webowe B2B, systemy dla firm, web service, projektowanie stron i paneli, dedykowane aplikacje internetowe',
+        canonical: 'https://fora-ws.pl/web-service',
+        robots: 'index,follow'
+      }}},
   {path: '**', redirectTo: ''},
 ];
