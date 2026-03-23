@@ -50,9 +50,10 @@ main
   height: 10vh
   width: 100%
   display: grid
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: 1fr 0.3fr
   justify-content: center
   align-items: center
+  margin-top: 2rem
 
   button
     grid-column: 3 / span 1
@@ -60,11 +61,12 @@ main
 
 .logoFWS
   grid-column: 1 / span 1
-  max-width: 20rem
+  max-width: 25rem
   height: 100%
-  background-color: #fafafa
+  background-color: c.$fontColorLight
   mask: url('../../../../../public/iconst/LogoFWS.svg') no-repeat
   -webkit-mask: url('../../../../../public/iconst/LogoFWS.svg') no-repeat
-  mask-size: contain
+  mask-size: cover
   mask-position: left center
+  cursor: pointer
 

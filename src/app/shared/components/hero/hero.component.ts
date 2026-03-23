@@ -38,7 +38,7 @@ export class HeroComponent implements OnInit {
   photosURS:string = ''
 
   ngOnInit() {
-    this.api.getHeroComponentData(window.location.pathname.slice(1)).subscribe({
+    this.api.getHeroComponentData(window.location.pathname.slice(0)).subscribe({
       next: (res:any) => {
         this.dataHero = res.data[0]
         this.photosURS = `${this.urlAddress}${this.dataHero.photos[0].url}`

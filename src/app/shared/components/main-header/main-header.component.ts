@@ -16,4 +16,8 @@ export class MainHeaderComponent {
   clickButton() {
     this.router.navigate(['/contact']);
   }
+
+  homePage() {
+    this.router.navigate(['/']);
+  }
 }
