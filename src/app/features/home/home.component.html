@@ -1,20 +1,68 @@
 <app-hero></app-hero>
 <div class="informationHomeSectiopn">
   <h2>FORA Warehouse System</h2>
-  <p>Łączy doświadczenie operacyjne, projektowe i technologiczne, tworząc rozwiązania dopasowane do przestrzeni, procesów i sposobu działania nowoczesnych firm.</p>
-  <p>Tworzymy spójne rozwiązania, które wspierają organizację pracy, komunikację wizualną i rozwój biznesu.</p>
+  <p>Łączymy doświadczenie operacyjne, projektowe i technologiczne, tworząc rozwiązania dopasowane do przestrzeni, procesów i sposobu działania nowoczesnych firm.</p>
+  <p>Tworzymy spójne rozwiązania, które wspierają organizację pracy, komunikację wizualną i codzienne funkcjonowanie firmy.</p>
   <div class="informationElements">
     <div class="itemInformation">
+      <img src="https://admin.fora-poligrafia.pl/uploads/homepageone_d21d3e89a3.webp" alt="Grafika">
       <h4>Grafika</h4>
       <p>Projektowanie materiałów i komunikacji wizualnej wspierającej markę oraz codzienną pracę firmy.</p>
     </div>
     <div class="itemInformation">
+      <img src="https://admin.fora-poligrafia.pl/uploads/homepagetwo_c7164f9b9d.webp" alt="Przestrzeń">
       <h4>Przestrzeń</h4>
       <p>Oznakowanie i rozwiązania porządkujące środowisko operacyjne, orientację i organizację pracy.</p>
     </div>
     <div class="itemInformation">
+      <img src="https://admin.fora-poligrafia.pl/uploads/homepagethree_bcc0a0592a.webp"
+           alt="System">
       <h4>System</h4>
       <p>Narzędzia i technologie wspierające procesy, rozwój i sposób działania nowoczesnych firm.</p>
     </div>
   </div>
+</div>
+<div class="buisnessBenefitsSection">
+  <h4>Rozwiązania, które wspierają codzienną pracę firmy</h4>
+  <p>Tworzymy rozwiązania, które nie tylko dobrze wyglądają, ale przede wszystkim porządkują przestrzeń, usprawniają komunikację i wspierają organizację pracy.</p>
+  <div class="benefitsElements">
+    <div class="itemBenefits">
+      <i class="fa-sharp fa-light fa-object-group"></i>
+      <h4>Lepsza organizacja</h4>
+      <p>Uporządkowana przestrzeń, czytelne oznaczenia i spójne materiały wspierają sprawniejsze funkcjonowanie firmy na co dzień.</p>
+    </div>
+    <div class="itemBenefits">
+      <i class="fa-sharp fa-light fa-share-nodes"></i>
+      <h4>Czytelniejsza komunikacja</h4>
+      <p>Dobrze zaprojektowane rozwiązania ułatwiają przekazywanie informacji wewnątrz organizacji i w kontakcie z klientem.</p>
+    </div>
+    <div class="itemBenefits">
+      <i class="fa-sharp fa-light fa-award"></i>
+      <h4>Spójny wizerunek</h4>
+      <p>Jednolita identyfikacja wizualna i profesjonalne materiały wzmacniają wiarygodność marki i sposób jej odbioru.</p>
+    </div>
+    <div class="itemBenefits">
+      <i class="fa-sharp fa-light fa-briefcase"></i>
+      <h4>Realne wsparcie biznesu</h4>
+      <p>Projektujemy rozwiązania dopasowane do procesów, potrzeb i codziennego działania nowoczesnych firm.</p>
+    </div>
+  </div>
+</div>
+<div class="forWhomWorkingSection">
+  <h2>Dla firm, które chcą działać czytelniej, sprawniej i bardziej profesjonalnie</h2>
+  <p>Projektujemy rozwiązania dopasowane do środowiska pracy, procesów i standardów organizacyjnych firm, które potrzebują spójnych, funkcjonalnych i nowocześnie zaprojektowanych narzędzi wspierających codzienne działanie.</p>
+  <div class="elementsForWhom">
+    @for (item of dataForWhom ; track item.id; let i = $index) {
+      <div class="itemForWhom">
+        <app-scope-service [data]="item" [isReverse]="i % 2 ===0"></app-scope-service>
+      </div>
+    }
+  </div>
+  <app-button-link link="contact" fragment="wspolpraca"
+                   name="jak wyglada współpraca"></app-button-link>
+</div>
+<div class="CTAHomeSection">
+  <h2>Porozmawiajmy o rozwiązaniu dopasowanym do Twojej firmy</h2>
+  <p>Jeśli szukasz spójnego podejścia do przestrzeni, komunikacji i narzędzi wspierających firmę, porozmawiajmy o projekcie dopasowanym do Twoich potrzeb.</p>
+  <app-button-link link="contact" fragment="form" name="Porozmawiajmy o projekcie"></app-button-link>
 </div>

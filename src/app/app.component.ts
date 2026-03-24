@@ -19,7 +19,7 @@ export class AppComponent  implements OnInit{
 
   constructor(private seoRouteListener: SeoRouteListenerService) { }
 
-  statusMode = 'dev'
+  statusMode = 'prod'
   hostname = ''
 
   ngOnInit() {

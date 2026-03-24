@@ -26,9 +26,9 @@ export const routes: Routes = [
     data: {
       seo: {
         title: 'FORA Warehouse System | Oznakowanie magazynów i projekty dla logistyki',
-        description: 'Kompleksowe oznakowanie magazynów, projekty graficzne, identyfikacja lokalizacji, tablice, etykiety i rozwiązania wizualne dla logistyki oraz przemysłu.',
+        description: 'FORA Warehouse System tworzy rozwiązania dla firm logistycznych, produkcyjnych i dystrybucyjnych. Znakowanie magazynów, poligrafia, projekty graficzne, analiza danych, usługi dronowe i web service dla biznesu.',
         canonical: 'https://fora-ws.pl',
-        keywords: 'oznaczenie magazynu, oznakowanie magazynów, etykiety magazynowe, znakowanie regałów, identyfikacja lokalizacji, projekty graficzne dla firm, logistyka magazynowa',
+        keywords: 'FORA Warehouse System, znakowanie magazynów, poligrafia dla firm, projekty graficzne, analiza danych, usługi dronowe, web service dla firm, rozwiązania dla logistyki, rozwiązania dla firm produkcyjnych, rozwiązania dla dystrybucji, oznakowanie przestrzeni, komunikacja wizualna dla firm',
         robots: 'index, follow',
       }
     }

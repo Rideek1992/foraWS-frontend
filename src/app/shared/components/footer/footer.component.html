@@ -10,9 +10,10 @@
 
   <div class="menuInformation">
     <app-footer-link name="Kontakt" link="contact"></app-footer-link>
-    <app-footer-link name="O nas" link="about-us"></app-footer-link>
-    <app-footer-link name="Portfolio" link="portfolio"></app-footer-link>
-    <app-footer-link name="Rekomendacje" link="recommendations" [active]="true"></app-footer-link>
+    <app-footer-link name="O nas" link="about-us" [active]="false"></app-footer-link>
+    <app-footer-link name="Portfolio" link="portfolio" [active]="false"></app-footer-link>
+    <app-footer-link name="Rekomendacje" link="recommendations"
+                     [active]="false"></app-footer-link>
   </div>
   <div class="contactData">
     <div class="email">
